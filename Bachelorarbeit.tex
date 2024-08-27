@@ -1,0 +1,72 @@
+\documentclass[fontsize=10.5, ngerman]{scrreport}
+\usepackage{stylefile}
+\usepackage{svg}
+\begin{document}
+	
+	\begin{titlepage}
+		\centering
+		\vspace*{\fill}
+		\begin{center}
+			\rule[0.5ex]{.8\textwidth}{2pt}\\
+			\LARGE Optimierung der Feldeinstellungen in\\
+			einem Triple- GEM-Detektor\\
+			\rule[0.5ex]{.8\textwidth}{2pt}\\
+			\vspace{0.5 cm}
+			\large Bachelorarbeit in Physik\\
+			\vspace{0.5 cm}
+			von \\
+			\vspace{0.5 cm}
+			Maximilian Thomas Spors\\
+			\vspace{0.5 cm}
+			angefertigt am \\
+			\vspace{0.5 cm}
+			Helmholtz Institut für Strahlen und Kernphysik\\
+			\vspace{1 cm}
+			vorgelegt an der \\
+			Mathematisch-Naturwissenschaftlichen Fakultät\\
+			der Universität Bonn\\
+			\vspace{1 cm}
+			09/2024		
+		\end{center}
+		
+		\vspace*{\fill}
+	\end{titlepage}
+	\newpage
+	\pagenumbering{roman}
+	\pagestyle{empty}
+	\vspace*{\fill}
+	\noindent	Ich versichere, dass ich diese Arbeit selbstständig verfasst und keine anderen als die angegebenen
+	Quellen und Hilfsmittel benutzt sowie die Zitate kenntlich gemacht habe.
+	
+	
+	\vspace{1.5 cm}
+	
+	
+	\noindent \begin{minipage}[c]{6cm}
+		Bonn, der\centering \dotfill
+	\end{minipage} \hfill 
+	\begin{minipage}[c]{6cm}
+		Unterschrift: \centering \dotfill
+	\end{minipage}
+	
+	\vspace{2cm}
+	
+	\noindent 1. Gutachter: Prof. Dr. Bernhard Ketzer\\
+	\noindent 2. Gutachter:
+	\newpage
+	\pagestyle{scrheadings}
+	\tableofcontents
+	\newpage
+	
+	\pagenumbering{arabic}
+	
+	\include{Kapitel/Einleitung}
+	\newpage
+	\include{Kapitel/Hintergrund_Gasdetektoren}
+	\newpage
+	\include{Kapitel/GEMs}
+	\newpage
+	\appendix
+	\printbibliography
+	
+\end{document}

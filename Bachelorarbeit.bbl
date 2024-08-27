@@ -1,0 +1,596 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{BUTTNER}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=495ef050b39bd1e19f63c243bb33b573}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={C.\bibnamedelimi Büttner},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{fullhash}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{fullhashraw}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{bibnamehash}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{authorbibnamehash}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{authornamehash}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{authorfullhash}{495ef050b39bd1e19f63c243bb33b573}
+      \strng{authorfullhashraw}{495ef050b39bd1e19f63c243bb33b573}
+      \field{extraname}{1}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{1}
+      \field{title}{Progress with the gas electron multiplier}
+      \field{volume}{409}
+      \field{year}{1998}
+      \field{pages}{79\bibrangedash 83}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0168-9002(97)01240-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900297012400
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900297012400
+      \endverb
+      \keyw{Gas,Electron,Multiplier,GEM,Detector,Amplification}
+    \endentry
+    \entry{Bachmann}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8dc829d2fd4292d5149c17c08eeb526f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={S.\bibnamedelimi Bachmann},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{fullhash}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{fullhashraw}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{bibnamehash}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{authorbibnamehash}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{authornamehash}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{authorfullhash}{8dc829d2fd4292d5149c17c08eeb526f}
+      \strng{authorfullhashraw}{8dc829d2fd4292d5149c17c08eeb526f}
+      \field{extraname}{2}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{2}
+      \field{title}{Charge amplification and transfer processes in the gas electron multiplier}
+      \field{volume}{438}
+      \field{year}{1999}
+      \field{pages}{376\bibrangedash 408}
+      \range{pages}{33}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0168-9002(99)00820-7
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900299008207
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900299008207
+      \endverb
+    \endentry
+    \entry{Stabilitaet_Discharge}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=bf9f6951390487b069d52ee7969e3478}{%
+           family={Bachmann},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e4108219cc94cdb1ee7ecf137cc8e9c7}{%
+           family={Bressan},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a91c6ae1ea512739357ec385454b86c0}{%
+           family={CapeÃ¡ns},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ccf343d72fce36d558f3ab248d0b75d2}{%
+           family={Deutel},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d23edd19c7c5706d2d2dd7321b11aea8}{%
+           family={Kappler},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fb9f9906eb0de10bee695a5b040993b3}{%
+           family={Ketzer},
+           familyi={K\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=65dc43ead81b5fc548bd351182342fee}{%
+           family={Polouektov},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b94ff82cf3b5ebbef86226aa07556e3f}{%
+           family={Ropelewski},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=813f2f75daf26bfa4c2851951b7136a9}{%
+           family={Sauli},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2b1da700f327c731ec6fef41ea492456}{%
+           family={Schulte},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4bc99922dc28f759d83367f4468796e0}{%
+           family={Shekhtman},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6e7dc9ff9b67822751fccd5c67b19995}{%
+           family={Sokolov},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{046bae16cfcfe539aaf70efb9bb65483}
+      \strng{fullhash}{8cc21f81ffa053c431445db7a2e43ed9}
+      \strng{fullhashraw}{8cc21f81ffa053c431445db7a2e43ed9}
+      \strng{bibnamehash}{046bae16cfcfe539aaf70efb9bb65483}
+      \strng{authorbibnamehash}{046bae16cfcfe539aaf70efb9bb65483}
+      \strng{authornamehash}{046bae16cfcfe539aaf70efb9bb65483}
+      \strng{authorfullhash}{8cc21f81ffa053c431445db7a2e43ed9}
+      \strng{authorfullhashraw}{8cc21f81ffa053c431445db7a2e43ed9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{2}
+      \field{title}{Discharge studies and prevention in the gas electron multiplier (GEM)}
+      \field{volume}{479}
+      \field{year}{2002}
+      \field{pages}{294\bibrangedash 308}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0168-9002(01)00931-7
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900201009317
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900201009317
+      \endverb
+      \keyw{Gas electron multiplier,GEM,Gas discharges,Streamer,High rate radiation detector}
+    \endentry
+    \entry{GAS_MIX}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=100eff5c257bca45dc58f18dafae17f8}{%
+           family={Buzulutskov},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1feb5a449e9dd5543ef423a82e36d942}{%
+           family={Breskin},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b91813a23bf7beb94004b6bb6205fbd}{%
+           family={Chechik},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7ec9009044e1c2e4d8c9f4b60e5e7b0b}{%
+           family={Garty},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=813f2f75daf26bfa4c2851951b7136a9}{%
+           family={Sauli},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4bc99922dc28f759d83367f4468796e0}{%
+           family={Shekhtman},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{35cf1ad11ef9ee936a769c9ac7b58cf9}
+      \strng{fullhash}{2f500f4c7741ca4b1b31ed4dc0b1d3f4}
+      \strng{fullhashraw}{2f500f4c7741ca4b1b31ed4dc0b1d3f4}
+      \strng{bibnamehash}{35cf1ad11ef9ee936a769c9ac7b58cf9}
+      \strng{authorbibnamehash}{35cf1ad11ef9ee936a769c9ac7b58cf9}
+      \strng{authornamehash}{35cf1ad11ef9ee936a769c9ac7b58cf9}
+      \strng{authorfullhash}{2f500f4c7741ca4b1b31ed4dc0b1d3f4}
+      \strng{authorfullhashraw}{2f500f4c7741ca4b1b31ed4dc0b1d3f4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{1}
+      \field{title}{The GEM photomultiplier operated with noble gas mixtures}
+      \field{volume}{443}
+      \field{year}{2000}
+      \field{pages}{164\bibrangedash 180}
+      \range{pages}{17}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0168-9002(99)01011-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900299010116
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900299010116
+      \endverb
+    \endentry
+    \entry{DemtroderKerne}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=201d3ff9f6143043fddc357eb3552d04}{%
+           family={Demtroder},
+           familyi={D\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {ger ; eng}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{fullhash}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{fullhashraw}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{bibnamehash}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{authorbibnamehash}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{authornamehash}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{authorfullhash}{201d3ff9f6143043fddc357eb3552d04}
+      \strng{authorfullhashraw}{201d3ff9f6143043fddc357eb3552d04}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5. Aufl. 2017 edition.}
+      \field{isbn}{9783662528839}
+      \field{issn}{0937-7433}
+      \field{series}{Springer-Lehrbuch}
+      \field{title}{Experimentalphysik 4: Kern-, Teilchen- und Astrophysik}
+      \field{year}{2017}
+    \endentry
+    \entry{Gas_Energien}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e6e3b461824c583c7a8fa920ed95ed02}{%
+           family={Jesse},
+           familyi={J\bibinitperiod},
+           given={William\bibnamedelima P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=40ce79ff13c5455b50b1c6ea2711b4b6}{%
+           family={Sadauskis},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{fullhash}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{fullhashraw}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{bibnamehash}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{authorbibnamehash}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{authornamehash}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{authorfullhash}{5914d70952eefeb053ef3b3465df7d13}
+      \strng{authorfullhashraw}{5914d70952eefeb053ef3b3465df7d13}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-899X}
+      \field{journaltitle}{Physical review}
+      \field{number}{6}
+      \field{title}{Alpha-Particle Ionization in Pure Gases and the Average Energy to Make an Ion Pair}
+      \field{volume}{90}
+      \field{year}{1953}
+      \field{pages}{1120\bibrangedash 1121}
+      \range{pages}{2}
+    \endentry
+    \entry{ottnad}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=0ba933f688ef23f9d6c51a00685b1a18}{%
+           family={{Jonathan Ottnad}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Rheinische Friedrich-Wilhelms-Universität Bonn}%
+      }
+      \strng{namehash}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{fullhash}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{fullhashraw}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{bibnamehash}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{authorbibnamehash}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{authornamehash}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{authorfullhash}{0ba933f688ef23f9d6c51a00685b1a18}
+      \strng{authorfullhashraw}{0ba933f688ef23f9d6c51a00685b1a18}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Optimierung der GEM-basierten Verstärkungsstufe einer TPC für das CB/TAPS-Experiment}
+      \field{type}{phdthesis}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://hdl.handle.net/20.500.11811/8516
+      \endverb
+      \verb{url}
+      \verb https://hdl.handle.net/20.500.11811/8516
+      \endverb
+    \endentry
+    \entry{Leo}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a80848957bddae12c3f76ac11f3b52c3}{%
+           family={Leo},
+           familyi={L\bibinitperiod},
+           given={William\bibnamedelima R},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{organization}{1}{%
+        {SpringerLink (Online service)}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin / Heidelberg}%
+      }
+      \strng{namehash}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{fullhash}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{fullhashraw}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{bibnamehash}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{authorbibnamehash}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{authornamehash}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{authorfullhash}{a80848957bddae12c3f76ac11f3b52c3}
+      \strng{authorfullhashraw}{a80848957bddae12c3f76ac11f3b52c3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second Revised Edition.}
+      \field{isbn}{9783540572800}
+      \field{title}{Techniques for Nuclear and Particle Physics Experiments: A How-To Approach}
+      \field{year}{1994}
+    \endentry
+    \entry{GEM_Introduction}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=813f2f75daf26bfa4c2851951b7136a9}{%
+           family={Sauli},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{fullhash}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{fullhashraw}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{bibnamehash}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{authorbibnamehash}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{authornamehash}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{authorfullhash}{813f2f75daf26bfa4c2851951b7136a9}
+      \strng{authorfullhashraw}{813f2f75daf26bfa4c2851951b7136a9}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{2}
+      \field{title}{GEM: A new concept for electron amplification in gas detectors}
+      \field{volume}{386}
+      \field{year}{1997}
+      \field{pages}{531\bibrangedash 534}
+      \range{pages}{4}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0168-9002(96)01172-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900296011722
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900296011722
+      \endverb
+    \endentry
+    \entry{Sauli_Multiwire}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=471ed24a13cbceafeae7b9b35239a9fd}{%
+           family={Sauli},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{fullhash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{fullhashraw}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{bibnamehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authorbibnamehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authornamehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authorfullhash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authorfullhashraw}{471ed24a13cbceafeae7b9b35239a9fd}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{CERN, Geneva, 1975 - 1976}
+      \field{title}{Principles of operation of multiwire proportional and drift chambers}
+      \field{type}{techreport}
+      \field{year}{1977}
+      \verb{doi}
+      \verb 10.5170/CERN-1977-009
+      \endverb
+      \verb{urlraw}
+      \verb http://cds.cern.ch/record/117989
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/117989
+      \endverb
+    \endentry
+    \entry{Sauli_Übersicht}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=471ed24a13cbceafeae7b9b35239a9fd}{%
+           family={Sauli},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{fullhash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{fullhashraw}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{bibnamehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authorbibnamehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authornamehash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authorfullhash}{471ed24a13cbceafeae7b9b35239a9fd}
+      \strng{authorfullhashraw}{471ed24a13cbceafeae7b9b35239a9fd}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{note}{Special Issue in memory of Glenn F. Knoll}
+      \field{title}{The gas electron multiplier (GEM): Operating principles and applications}
+      \field{volume}{805}
+      \field{year}{2016}
+      \field{pages}{2\bibrangedash 24}
+      \range{pages}{23}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.nima.2015.07.060
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900215008980
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900215008980
+      \endverb
+      \keyw{Gas Electron Multiplier,GEM,Gaseous radiation detectors}
+    \endentry
+    \entry{Schwabl}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e40d3b3281b535bb9371fb1f91089c98}{%
+           family={Schwabl},
+           familyi={S\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{fullhash}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{fullhashraw}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{bibnamehash}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{authorbibnamehash}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{authornamehash}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{authorfullhash}{e40d3b3281b535bb9371fb1f91089c98}
+      \strng{authorfullhashraw}{e40d3b3281b535bb9371fb1f91089c98}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second Edition.}
+      \field{isbn}{3540203605}
+      \field{series}{Springer-Lehrbuch}
+      \field{title}{Statistische Mechanik}
+      \field{year}{2013}
+    \endentry
+    \entry{Townsend}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=88774030efabe5c48ecdd4170e303dc4}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Dengming},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Germany}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin / Heidelberg}%
+      }
+      \strng{namehash}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{fullhash}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{fullhashraw}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{bibnamehash}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{authorbibnamehash}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{authornamehash}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{authorfullhash}{88774030efabe5c48ecdd4170e303dc4}
+      \strng{authorfullhashraw}{88774030efabe5c48ecdd4170e303dc4}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Gas Discharge and Gas Insulation}
+      \field{isbn}{9783662480403}
+      \field{issn}{2197-0238}
+      \field{series}{Energy and Environment Research in China}
+      \field{title}{Fundamental Theory of Townsend Discharge}
+      \field{volume}{6}
+      \field{year}{2015}
+      \field{pages}{47\bibrangedash 88}
+      \range{pages}{42}
+      \keyw{Applied physics & special topics ; Electron avalanche ; Paschenâ€™s law ; Plasma physics ; Power networks,systems,stations & plants ; Self-sustaining discharge ; Townsend discharge}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

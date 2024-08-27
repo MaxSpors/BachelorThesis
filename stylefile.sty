@@ -1,0 +1,85 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Aufstellung der Pakete und ihrer Zwecke im File
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Layout-, Erscheinungsbild- und Sprachpakete
+
+\usepackage[ngerman]{babel}          		% Spezifisches Type-Setting (deutsch)
+\usepackage[autostyle=true]{csquotes} 		% Anführungszeichen
+\usepackage{fontspec}         		% Auswahl der Schriftarten (LuaLaTeX)
+\usepackage{xcolor}                  		% Farbwahlpaket
+\usepackage{relsize}                 		% Erlaubt die Schriftgröße relativ zur globalen lokal zu verändern
+\usepackage{hyperref}                		% Erlaubt das Springen und Verlinken von Dokumenten und im Dokument
+\usepackage{xspace}                  		% Erlaubt einfacheres Spacing hinter Makros
+\usepackage{scrlayer-scrpage}        		% KOMA-Script Paket für Kopf- und Fußzeilen
+
+% Bibliographie und Referenzen
+
+\usepackage[backend=biber]{biblatex}                		% Formattiere die Bibliographie
+\addbibresource{literatur.bib}       		% Setze Referenz zur Zitation aller Literatur (kann mehrere verlinken)
+
+% Grafiken und Tabellen
+
+\usepackage{graphicx}                		% Inkludiere Grafiken im Dokument
+\usepackage{caption,subcaption}     		% Erlaube auch Subfigures in den Figure-Umgebungen
+\usepackage{wrapfig}                 		% Erlaube Wrapfigures, falls nötig (scheinbar für Abschlussarbeiten nicht favorisiert)
+\usepackage{rotating}                		% Kann große Tabellen drehen
+\usepackage{booktabs}                		% Erlaubt die Erstellung hübscheren Tabellen
+
+% Mathematik und Physik
+
+\usepackage{amsmath}                 		% Mathe-Umgebungen
+\usepackage{amssymb}                 		% Weitere Typesetting-Symbole in Mathe-Umgebungen
+\usepackage{physics}                 		% Weitere nützliche Commands für Differentiale, Matizen, etc.
+\usepackage[version=4]{mhchem}                  		% Elegante Art, die Isotopen-Zahlen aufzuschreiben
+\usepackage{xfrac}                   		% Mehr Arten Brüche aufzuschreiben und zu formatieren
+\usepackage{extarrows}               		% Andere Pfeilklassen zum Auswählen
+\usepackage{siunitx-v2}              		% Formattiere die Einheiten und Zahlendarstellungen
+
+% Sonstige Pakete
+
+\usepackage{lineno}                  		% Gibt Zeilenangaben im Text (wichtig für schnellere Bearbeitung, nur im Draft)
+\usepackage{refcheck}                		% Checke ob jede Abbildung/Tabelle referenziert ist
+\usepackage{lipsum}				% Dummy Text für Formatierung
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Globale Definitionen (Formatierung) und Pfade
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\definecolor{Dunkelblau}{RGB}{14, 3, 46} 	% Farbeinstellung für die Überschriften	
+\definecolor{Schwarz}{RGB}{0,0,0}       	% Farbeinstellung für die Kapitel-Linien
+\areaset[0cm]{17cm}{24cm}                	% Textbreite: 15 cm, Texthöhe: 24 cm, Rand: 2 cm
+
+% Definiere den Seitenstil
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ihead{\headmark}
+\ohead{\pagemark}
+\setheadsepline{.2pt}
+
+\setmainfont{Times New Roman}                   	% Setzt die globale Schriftart auf Times New Roman
+\addtokomafont{disposition}{\color{Dunkelblau}} 	% Verändert alle Kapitelüberschriften
+\renewcommand{\thechapter}{\Roman{chapter}}	% Kapitel werden römisch nummeriert (Physical Review Letters)
+\renewcommand{\thesection}{\arabic{section}}	% Abschnitte werden Arabisch nummeriert (Physical Review Letters)
+\addtokomafont{chapterentry}{\normalcolor}     	% Lässt die Farbe aller Einträge schwarz
+
+% Anpassung der Kapitelüberschrift
+\renewcommand*{\chapterformat}{
+	\centering
+	\chapapp~\thechapter
+}
+
+\renewcommand*{\chapterlinesformat}[3]{
+	\centering
+	#2
+	
+\noindent	\textbf{#3}
+	\vspace{0.15em}
+	\rule{\textwidth}{1pt}
+}
+
+\graphicspath{{./Bilder/}}            		% Setze den relativen Pfad zu allen Bildern
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Relevante Makros für Gleichungen und Textabschnitte
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
