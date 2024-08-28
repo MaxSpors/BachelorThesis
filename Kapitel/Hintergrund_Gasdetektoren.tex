@@ -1,9 +1,9 @@
 \chapter{Das Prinzip von Gasdetektoren}
 
-\noindent Gasgefüllte Detektoren sind eine effiziente Methode zur Untersuchung ionisierender Strahlung und der zugrundeliegenden Wechselwirkungen. Das Verständnis ihrer Funktionsweise und ihrer inhärenten Grenzen erfordert die Diskussion ihrer physikalischen Mechanismen. In diesem Kapitel wird daher die Funktionsweise von Gasdetektoren auf Basis dieser Prinzipien erläutert.
+\noindent Gasgefüllte Detektoren sind eine effiziente Methode zur Untersuchung ionisierender Strahlung und physikalischer Wechselwirkungen, die zu Teilchenzerfällen führen. Das Verständnis ihrer Funktionsweise und ihrer inhärenten Grenzen erfordert die Diskussion der ihnen zugrundeliegenden physikalischen Mechanismen. In diesem Kapitel wird daher die Funktionsweise von Gasdetektoren auf Basis dieser Prinzipien erläutert.
 
 	\section{Wechselwirkungen von ionisierender Strahlung mit Materie}
-	Ionisierende Strahlung kann mit dem durchstrahlten Medium wechselwirken und so Ionisationen verursachen. Die Wechselwirkungen unterscheiden sich für Photonen und geladenen Teilchen, was auf die gegensätzlichen physikalischen Eigenschaften zurückzuführen ist: Geladene Teilchen deponieren den Großteil ihrer Energie durch inelastische Stöße mit den Elektronen des Materials \cite{Leo}. Dieser Prozess hinterlässt eine Spur von Elektron-Ion-Paaren im Material, was prinzipiell eine Rekonstruktion der Teilchenspur ermöglicht.\\
+	Ionisierende Strahlung kann mit dem durchstrahlten Medium wechselwirken und so Ionisationen verursachen. Die Wechselwirkungen unterscheiden sich für Photonen und geladenen Teilchen, masselose, neutrale Teilchen haben demnach andere Wechselwirkungsmechanismen als geladene Teilchen: Geladene Teilchen deponieren den Großteil ihrer Energie durch inelastische Stöße mit den Elektronen des Materials \cite{Leo}. Dieser Prozess hinterlässt eine Spur von Elektron-Ion-Paaren im Material, was prinzipiell eine Rekonstruktion der Teilchenspur ermöglicht, und so beispielsweise die Analyse von Zerfallsprozessen erlaubt.\\
 	\\
 	Da die Spurrekonstruktion in dieser Arbeit keine zentrale Rolle spielt, werden im Folgenden die relevanten Wechselwirkungsphänomene fokussiert behandelt. Eine umfassende und detaillierte Behandlung der Teilchenwechselwirkungen findet sich exemplarisch in \cite{Leo} und \cite{Sauli_Multiwire}.
 
@@ -26,7 +26,7 @@
 		
 		
 		\subsubsection{Compton-Streuung}
-		Compton-Streuung ist die Streuung eines Photons an einem lose gebundenen Elektron. Ein Teil der Photonenenergie wird dabei auf das Elektron übertragen,das Photon wird nicht absorbiert. Man unterscheidet zwischen Rayleigh-, Thomson- und Compton-Streuung. Diese Phänomene werden durch die Klein-Nishina-Formel beschrieben, wobei die klassische Streuung den niederenergetischen Grenzfall der Compton-Streuung darstellt. Der Wirkungsquerschnitt der Compton-Streuung ist primär energieabhängig  \cite{Leo}:
+		Compton-Streuung ist die Streuung eines Photons an einem lose gebundenen Elektron. Ein Teil der Photonenenergie wird dabei auf das Elektron übertragen, das Photon wird nicht absorbiert. Man unterscheidet zwischen Rayleigh-, Thomson- und Compton-Streuung. Diese Phänomene werden durch die Klein-Nishina-Formel beschrieben, wobei die klassische Streuung den niederenergetischen Grenzfall der Compton-Streuung darstellt. Der Wirkungsquerschnitt der Compton-Streuung ist primär energieabhängig  \cite{Leo}:
 		\begin{equation*}
 			{\displaystyle \dv{\sigma}{\Omega}={\frac {1}{2}}{\frac {\alpha ^{2}}{m^{2}}}\left({\frac {E'}{E}}\right)^{2}\left({\frac {E'}{E}}+{\frac {E}{E'}}-\sin ^{2}\theta \right)}
 		\end{equation*}
@@ -41,35 +41,35 @@
 		
 	\newpage
 	
-	\subsection{Sekundärionisation}	
-		Nach der Primärionisation durch das tatsächliche Detektionsereignis gibt es einige Effekte, die zu weiteren Ionisationen durch dasselbe Ereignis beitragen können. In diesem Zusammenhang spricht man von Sekundärionisationen. Ein Verständnis dieser Effekte ist fundamental für die korrekte Beurteilung der Arbeitsparameter von Detektoren (siehe Abschnitte [GAIN und ENERGIERES]).
+	\subsection{Sekundärionisation}	\label{chap:Sekundär}
+		Nach der Primärionisation durch das tatsächliche Detektionsereignis gibt es einige Effekte, die zu weiteren Ionisationen durch dasselbe Ereignis beitragen können. In diesem Zusammenhang spricht man von Sekundärionisationen. Ein Verständnis dieser Effekte ist fundamental für die korrekte Beurteilung der Arbeitsparameter von Detektoren (siehe Abschnitt \ref{sec: Parameter}).
 		
 		\subsubsection{Lokale Clusterbildung}
-			Wir ein Elektron bspw. durch den Photoeffekt ausgelöst, hat dieses Elektron oft noch so viel Energie, dass weitere Stoßwechselwirkungen mit den Atomen zu Sekundärionisationen führen können. Es bildet sich ein Lokales Cluster aus Elektronen, die zu einem Detektionsereignis gehören, da der Auslösungsprozess so lange geht, bis die Energie des Elektrons für weitere Ionisationen nicht mehr ausreicht. Bei bekannter Ionisationsenergie des Mediums kann die Zahl der durch ein Detektionsereignis erzeugten Elektronen-Ionen-Paare kann wie folgt approximiert werden \cite{Sauli_Multiwire}:
-			\begin{equation*}
-				N_{\text{e}}=\frac{E_{\gamma}}{\phi_{\text{bind}}}
-			\end{equation*}	
-			Der Wert, der aus dieser Formel folgt ist offenbar ein Erwartungswert. Da die Wechselwirkungsprozesse statistischer Natur sind, müssen die daraus folgenden Unschärfen berücksichtigt werden.
+			Wird ein Elektron-Ionen-Paar durch Strahlung erzeugt, hat dieses Elektron oft noch so viel Energie, dass weitere Stoßwechselwirkungen mit den Atomen zu Sekundärionisationen führen können. Es bildet sich ein lokales Cluster aus Elektronen, die zu einem Detektionsereignis gehören, da der Ionisationsprozess so lange geht, bis die Energie des Elektrons für weitere Ionisationen nicht mehr ausreicht. Bei bekannter Ionisationsenergie des Mediums kann die Zahl der durch ein Detektionsereignis erzeugten Elektronen-Ionen-Paare kann wie folgt approximiert werden \cite{Sauli_Multiwire}:
+			\begin{equation} \label{eq:Primärionisation}
+				N_{\text{e}}=\frac{E_{\gamma}}{\phi_{\text{ion}}}
+			\end{equation}	
+			Der Wert, der aus dieser Formel folgt, ist offenbar ein Erwartungswert. Da die Wechselwirkungsprozesse statistischer Natur sind, fluktuiert die Zahl der erzeugten Elektronen-Ionen-Paare gemäß einer Polya-Verteilung \cite{ottnad}.
 		
 		\subsubsection{Penning-Effekt}
-			Man kann nun ein anderes Molekül in das Medium geben, dessen Ionisationsenergie unterhalb der Anregungsniveaus des ursprünglichen Mediums liegt. Auf diese Weise kann man die Energie, die in Anregungen \enquote{verloren} geht wiederum durch Stoßwechselwirkungen zwischen den Atomen im Elektronen-Ionen-Paare umwandeln. In dieser Gasmischung wird die Effektive Ionisationsenergie quasi heruntergesetzt, sodass mehr Ionisationen stattfinden. Man bezeichnet dieses Gas als Quencher und den illustrierten Effekt als Penning Effekt \cite{ottnad}.
+			Man kann nun ein anderes Molekül in das Medium geben, dessen Ionisationsenergie unterhalb der Anregungsniveaus des ursprünglichen Mediums liegt. Auf diese Weise kann man die Energie, die in Anregungen \enquote{verloren} geht wiederum durch Stoßwechselwirkungen zwischen den Atomen im Elektronen-Ionen-Paare umwandeln. In dieser Gasmischung wird die Effektive Ionisationsenergie quasi heruntergesetzt, sodass mehr Ionisationen stattfinden. Man bezeichnet dieses Gas als Quencher und den illustrierten Prozess als Penning Effekt \cite{ottnad}.
 			
 		\subsubsection{Auger-Meitner-Effekt}
-			Im Kontext des Photoeffektes ist es wahrscheinlich, dass das ausgelöste Elektron aus einer unteren Schale stammt. Neben der Rekombination unter Emission von Strahlung oder internen Übergängen unter Photonenemission ist auch ein strahlungsloser interner Übergang möglich. Dabei kann ein weniger stark gebundenes Elektron der äußeren Schalen auf die innere zurückfallen und ihre Energie an ein anderes Elektron im System abgeben, was zu einer weiteren Ionisation führen kann \cite{Sauli_Multiwire}. 
+			Im Kontext des Photoeffektes ist es wahrscheinlich, dass das ausgelöste Elektron aus einer unteren Schale stammt. Neben der Rekombination unter Emission von Strahlung oder internen Übergängen unter Photonenemission ist auch ein strahlungsloser interner Übergang möglich. Dabei kann ein weniger stark gebundenes Elektron der äußeren Schalen auf die innere zurückfallen und seine Energie an ein anderes Elektron im System abgeben, was zu einer weiteren Ionisation führen kann \cite{Sauli_Multiwire}. 
 			
 		\subsubsection{$\delta$-Elektronen und nicht-lokale Clusterbildung}
-			Die statistische Natur der Wechselwirkungsprozesse erlauben es, dass ein ein hochenergetisches freies Elektron entstehen kann, das durch das Medium propagiert und in Übereinstimmung mit einer Modifizierten Bethe-Bloch-Formel \cite{Leo} Energie verliert. Hierbei können weitere Elektronen-Ionen-Paare erzeugt werden, die Position dieser Sekundärerzeugung muss allerdings nicht mit dem Ort der Primärionisation übereinstimmen, sondern kann deutlich entfernt stattfinden. Daher können mehrere Cluster entstehen, die zu einem Ereingnis gehören. Delta-Elektronen können daher nicht nur die Ortsauflösung des Detektors beeinflussen, sondern auch für größere Fluktuationen bei der Messung der deponierten Energie sorgen.
+			Die statistische Natur der Wechselwirkungsprozesse erlauben es, dass ein ein hochenergetisches freies Elektron entstehen kann, das durch das Medium propagiert und in Übereinstimmung mit einer Modifizierten Bethe-Bloch-Formel \cite{Leo} Energie verliert. Hierbei können weitere Elektronen-Ionen-Paare erzeugt werden, die Position dieser Sekundärerzeugung muss allerdings nicht mit dem Ort der Primärionisation übereinstimmen, sondern kann deutlich entfernt stattfinden. Daher können mehrere Cluster entstehen, die zu einem Ereignis gehören. Delta-Elektronen können daher nicht nur die Ortsauflösung des Detektors beeinflussen, sondern auch für größere Fluktuationen bei der Messung der deponierten Energie sorgen.
 			
 		\newpage	
 		
 	\section{Bewegungen von Ladungen}		
-	Nachdem die Detektionsereignisse stattfanden und daher freie Elektronen-Ionen-Paare existieren, müssen diese Ausgelesen werden. Dafür müssen die Ladungen von der Rekombination aufgehalten und getrennt werden, weswegen die Bewegung von Ladungsträgern und damit verbundene Größen definiert und verstanden werden müssen.\\
+	Wenn Elektronen-Ionen-Paare erzeugt wird, müssen diese gemessen werden, um daraus Erkenntnisse über die Strahlung zu gewinnen. Dafür müssen die Ladungen von der Rekombination aufgehalten und getrennt werden, weswegen die Bewegung von Ladungsträgern und damit verbundene Größen definiert und verstanden werden müssen.\\
 	Die Bewegung eines Ladungsträgers setzt sich zusammen aus der Eigenbewegung des Teilchens, die durch zahlreiche Stöße in thermische Bewegung (Diffusion) übergeht und die Driftbewegung in elektromagnetischen Feldern.
 	
 		\subsection{Diffusion}	
-		Ohne Elektrische Felder bewegt sich das Elektron entsprechend der Energie- und Impulserhaltung nach der Ionisationswechselwirkung. Durch die Stöße mit den Gasatomen wird die Bewegung verlangsamt und so umgelenkt, dass die Bewegung eines Elektronenensembles nunmehr ungerichtet ist, die Elektronenwolke diffundiert. Die Beschreibung dieser Prozesse im Rahmen der kinetischen Gastheorie zeigt, dass die räumliche Verteilung um den Primären Ionisationspunkt gauß'sch ist, wobei die räumliche Ausdehnung aus der Standardabweichung abgeschätzt werden kann \cite{Sauli_Multiwire}. Die Diffusionsbewegung begrenzt also die räumliche Auflösung des Detektors auf natürliche Weise.\\
+		Ohne Elektrische Felder bewegt sich das Elektron entsprechend der Energie- und Impulserhaltung nach der Ionisationswechselwirkung. Durch die Stöße mit den Gasatomen wird die Bewegung verlangsamt und so umgelenkt, dass die Bewegung eines Elektronenensembles nunmehr ungerichtet ist, die Elektronenwolke diffundiert. Die Beschreibung dieser Prozesse im Rahmen der kinetischen Gastheorie zeigt, dass die räumliche Verteilung um den Primären Ionisationspunkt gauß'sch ist, wobei die räumliche Ausdehnung aus der Standardabweichung der resultierenden Verteilung abgeschätzt werden kann \cite{Sauli_Multiwire}. Die Diffusionsbewegung begrenzt also die räumliche Auflösung des Detektors auf natürliche Weise.\\
 		\\
-		Die Bewegung des Teilchens lässt sich durch die mittlere freie Weglänge beschreiben, die als Maß für die Strecke fungiert, die ein Teilchen zwischen zwei Wechselwirkungen zurücklegt. Sie ergibt sich aus der Teilchendichte $n$ und dem Wirkungsquerschnitt $\sigma$ über:
+		Die Bewegung des Teilchens lässt sich durch die mittlere freie Weglänge beschreiben, die als Maß für die Strecke fungiert, die ein Teilchen zwischen zwei Wechselwirkungen zurücklegt. Sie ergibt sich aus der Teilchendichte des Mediums $n$ und dem Wirkungsquerschnitt $\sigma$ über:
 		\begin{equation}
 			\lambda=\frac{1}{n\sigma}
 		\end{equation} 
@@ -80,18 +80,18 @@
 		\begin{equation*}
 			m \dot{v}= q \vec{E}- f(t)
 		\end{equation*}
-		Wobei $m$ die Teilchenmasse, $q$ die Ladung und $\vec{E}$ das elektrische Feld beschreibt, während $v$ die Geschwindigkeit und $f(t)$ eine zeitabhängige Kraft ist, die aus den Stoßwechselwirkungen resultiert. Man kann nun aus den Eigenschaften an die zeitbahängige Kraft Bedingungen konstruieren, die auf folgenden Zusammenhang für die Dirftgeschwindigkeit führen:
+		Wobei $m$ die Teilchenmasse, $q$ die Ladung und $\vec{E}$ das elektrische Feld beschreibt, während $v$ die Geschwindigkeit und $f(t)$ eine zeitabhängige Kraft ist, die aus den Stoßwechselwirkungen resultiert. Nach einer charakteristischen Zeit $\tau$ stellt sich indes ein Gleichgewicht ein, mit dem die Bewegung näherungsweise gleichförmig wird, für diesen Fall löst sich die Langevin-Gleichung dann über:
 		\begin{equation*}
 			\vec{v}= \mu \vec{E}
 		\end{equation*}
-		Wobei man $\mu=q/m \tau$ als Beweglichkeit des Teilchens bezeichnet, die mit der mittleren Stoßzeit $\tau$ und so mit der mittleren freien Weglänge zusammenhängt \cite{ottnad}. In erster Näherung wird damit klar, dass die Geschwindigkeit und so die kinetische Energie ausschlißelich vom anliegenden Elektrischen Feld abhängt.
+		Wobei man $\mu=q/m \tau$ als Beweglichkeit des Teilchens bezeichnet, die mit der mittleren Stoßzeit $\tau$ und so mit der mittleren freien Weglänge zusammenhängt \cite{ottnad}. In erster Näherung wird damit klar, dass die Geschwindigkeit und so die kinetische Energie ausschließlich vom anliegenden Elektrischen Feld abhängt.
 		
 		\newpage
 	\section{Gasdetektorklassen}
-		Mit den Eigenschaften um die Erzeugung und den Transport von Elektronen-Ionen-Paaren in Gasen können nun grundsätzliche Gasdetektorklassen abgeleitet werden, die sich vom grundlegenden Aufbau nicht sonderlich unterscheiden, sondern sehr wesentlich im Betrieb \cite{Leo}.
+		Mit dem Wissen über die Erzeugung und das Verhalten von freien Ladungsträgern in Gasen ist es nun möglich die Grundzüge der Gas-Detektorklassen zu erörtern. Hierbei werden zunächst allgemeine Anmerkungen über die grundlegenden Konzepte gemacht, wobei im Besonderen auf den Anwendungsbereich und Limitationen geachtet wird, formale Überlegungen zum Aufbau werden indes nicht gemacht, da der Konzeptionelle Aufbau im Allgemeinen recht ähnlich ist, sofern es keine besonderen Detektorkonzepte benötigt. Die Hauptunterscheidung der Klassen liegt in der Betriebsspannung \cite{Leo}.
 		
 		\subsection{Ladungsmultiplikationsmechanismen} \label{sec:Ladungsmultiplikation}
-			Wenn die kinetische Energie eines Teilchens die Ionisationsenergie eines Atoms überschreitet, kann es passieren, dass das Atom ionisiert wird. Ausgehend davon, dass die kinetische Energie geladener Teilchen in Feldern vom anliegenden Feld abhängt (siehe Abschnitt \ref{sec:Bewegung in Feldern}), kann das Feld so stark eingestellt werden, dass Sekundärionisationen stattfinden, wobei weitere Ionisationen je nach Größe der Region des starken Feldes möglich sind, insbesondere können dann auch in derselben Region ausgelöste Elektronen bereits zur Verstärkung der Elektronenwolke beitragen, es entsteht eine Lawine \cite{Townsend}, \cite{Leo}.\\
+			Wenn die kinetische Energie eines Teilchens die Ionisationsenergie eines Atoms überschreitet, können Ionisaationen auftreten. Ausgehend davon, dass die kinetische Energie geladener Teilchen in Feldern wesentlich von den anliegenden Feldern abhängt (siehe Abschnitt \ref{sec:Bewegung in Feldern}), kann das Feld so eingestellt werden, dass Sekundärionisationen stattfinden. Je nach Feldstärke und Größe der Multiplikationsregion können dann auch in derselben Region ausgelöste Elektronen bereits zur Verstärkung der Elektronenwolke beitragen, es entsteht eine Elektronenlawine \cite{Townsend}, \cite{Leo}.\\
 			\\
 			Die Zahl der Ladungsträger, die pro Längeneinheit entstehen sind eng mit der Zahl der Wechselwirkungen und damit mit der mittleren freien Weglänge verbunden. Man bezeichnet die Zahl der entstehenden Ladungsträger als ersten Townsend-Koeffizienten, für den gilt:
 			\begin{equation*}
@@ -101,22 +101,31 @@
 			\begin{equation}
 				G=\frac{N}{N_{0}} = e^{\alpha d}
 			\end{equation}
-			Der erste Townsendkoeffizient ist abhängig vom verwendeten Medium und steigt mit der Feldstärke an. Um Gasentladungen zu verhindern, kann die Zahl der Elektronen in diesem Volumen nicht beliebig ansteigen. Ein empirisch bestimmtes Limit für einen stabilen Betrieb ist das Raether-Limit nach dem gilt $\alpha d<20$ \cite{Sauli_Multiwire}.
+			Der erste Townsendkoeffizient ist abhängig vom verwendeten Medium und steigt mit der Feldstärke an, das Verhalten des Koeffizienten als Funktion der Feldstärke ist in Abbildung  \textcolor{blue}{Abbildung: Townsend-Koeffizienten} zu sehen. Um Gasentladungen zu verhindern, kann die Zahl der Elektronen im Verstärkungsvolumen nicht beliebig ansteigen. Ein empirisch bestimmtes Limit für einen stabilen Betrieb ist das Raether-Limit nach dem gilt $\alpha d<20$ \cite{Sauli_Multiwire}.
 			
-		\subsection{Ionisations- und Proportionalkammern}
-			Auf Basis der Ladungsmultipikationsmechanismen als Funktion des anliegenden Feldes ist es nunmehr möglich die beiden für diese Arbeit relevanten Detektorklassen zu definieren, da die Kenntnis über diese Systeme die Funktionsweise von GEM-Detektoren erheblich erleichtern wird.\\
+			
+			\newpage
+		\subsection{Ionisations- und Proportionalkammern} \label{sec:IonisationsundProportionalkammern}
+			Grundsätzlich unterscheidet man für Gasdetektoren, die nicht nur zum Nachweis, sondern auch zur Vermessung der Strahlung genutzt werden können, Ionisations- und Proportionalkammern.\\
+			 Ionisationskammern werden von elektrischen Feldern durchzogen, die nicht stark genug sind, um systematisch Ladungsmultiplikation auszulösen und dennoch (fast) alle entstehenden Elektronen-Ionen-Paare trennen und zur Ausleseelektronik zu überführen. Wird die Auslese segmentiert, ist es prinzipiell möglich die Spur des Teilchens zu rekonstruieren, in der Praxis sind die Signale allerdings zu schwach um adäquat vermessen zu werden. Es braucht eine zusätzliche Verstärkung, bevor die Elektronen die Auslese erreichen. Ausgehend davon, dass die Funktionsweise der Spurrekonstruktion für diese Arbeit nur peripher relevant ist, wird auf eine extensive Diskussion verzichtet, stattdessen reicht ein Verweis auf die dafür vorgesehene Fachliteratur \textcolor{red}{Zitation: Funktionsweise TPC}\\
 			\\
-			 Ionisationskammern sind gasgefüllte Kammern an denen ein elektrisches Feld anliegt, welches so stark ist, dass (fast) alle Ladungsträger gesammelt werden können, ohne allerdings eine Verstärkung zu erzeugen. Ionisationskammern können für geladene Teilchen zur Spurrekonstruktion genutzt werden, indem die Ausleseelektronik entsprechend segmentiert wird und die auftreffenden Elektronen auf der Auslese lokalisiert werden. Ein dreidimensionales Bild kann dann aus der zweidimensionalen Projektion aus der Auslesestruktur und der Zeit zwischen den Detektionsereignissen gewonnen werden. [ZITAT????] Das Feld und damit die Zeitauflösung ist nach oben hin durch das Ladungsmultiplikationsregime begrenzt.\\
+			 Um die Unzulänglichkeiten der Ionisationskammer zu kompensieren, kann man das Elektrische Feld so wählen, dass eine Ladungsmultiplikation einsetzt, eine Minimalsbschätzung kann hierbei durch die Townsend-Koeffizienten geschehen, nach Abbildung \textcolor{blue}{Abbildung: Townsend-Koeffizienten} beginnt das Multiplikationsregime bei [ZAHLENWERT].\\
 			 \\
-			 Proportinalkammern sind Gasgefüllte Kammern, die von einem Elektrischen Feld durchzogen sind, die so stark sind, dass Ladungsmultiplikation stattfinden kann. In Abbildung [ABBBILDUNG] ist die Feldabhängigkeit für eine Gasmischung aus Argon und $\text{CO}_{2}$ zu sehen. Demnach beginnt das Multiplikationsregime bei [ZAHLENWERT], sodass eine untere Grenze für die Felder existiert. Das Problem mit einer Proportionalkammer ist, dass in dem bisherigen Setup der Ort der Ionisation für die Verstärkung relevant ist, durch eine Verknüpfung mit einer Ionisationskammer kann die Ionisationsregion von der Verstärkungsregion getrennt werden, wodurch das Problem gelöst ist. Hat das anliegende Feld eine Größenordnung, die die Zahl der entstehenden Ionen moderat hält, dann ist die Zahl der emittierten Elektronen proportional zur Zahl der einfallenden Elektronen.
+			  Bei alleiniger Nutzung einer Proportionalkammer ist die Verstärkung im Allgemeinen auch Funktion des Entstehungsortes des Elektronen-Ionen-Paares. Um diese Limitation zu überwinden, können die Ionisationszone und die Verstärkungszone durch eine vorgelagerte Ionisationskammer getrennt werden, wodurch die Abhängigkeit vom Entstehungsort wegfällt, da alle Elektronen an der gleichen Stelle an die Verstärkungsregion übergeben werden.\\
+			  \\
+			  Eine weitere Limitation tritt genau dann zu Tage, wenn die Felder zu groß gewählt werden. In diesem Fall ist die Verstärkung so stark, dass eine wohllokalisierte Ladungszone aus Ionen entsteht, die das elektrische Feld verzerrt und so weitere Multiplikation temporär unterbinden kann, da sie deutlich langsamer als Elektronen driften. In diesem Fall encoded das Ausgangssignal keine genaue Information zu der im Detektor deponierten Energie, die Proportionalität des Detektors geht verloren, sodass es eine natürliche Gain-Limitation gibt, mit der der Betrieb als Proportionalkammer möglich ist.
 			 
-		\subsection{Parameter von Gasdetektoren}
+			 \newpage
+		\subsection{Parameter von Gasdetektoren} \label{sec: Parameter}
 			Zum Abschluss des Grundlagenkapitels für Gasdetektoren sollen nun einige finale Überlegungen zu generellen Eigenschaften und Parametern von Gasdetektoren angestellt werden. Im folgenden werden demnach die Ionisationseigenschaften des Aktiven Mediums, sowie die Energieauflösung von Gasdetektoren diskutiert,
 			
 			\subsubsection{Wahl des Gases}
-				Unterschiedliche Moleküle haben unterschiedliche Ionisationsenergien und daher unterschiedliche, elementspezifische Townsend-Koeffizienten. Die Verstärkung ist demnach abhängig von der Wahl des Aktiven Mediums und ist ihrerseits Thema kontinuierlicher Untersuchung \cite{GAS_MIX}. Neben einer möglichst geringen Ionisationsenergie sind weitere praktische Überlegungen für die Wahl des Arbeitsmediums anzustellen. Zum einen sollte das Medium reaktionsträge sein, da Alterungserscheinungen auf diese Weise später auftreten [QUELLE], die Wahl fällt demnach idealerweise auf ein Edelgas. Ferner sollten die mittlere freie Weglänge sowie die Driftgeschwindigkeit im Medium so dimensioniert sein, dass die Elektronen die Ionisationsregion schnell verlassen und so zeitnah zur Signalerzeugung beitragen.\\
+				Die Townsend-Koeffizienten sind aufgrund der unterschiedlichen Ionisationsnergien der verschiedenen Elemente materialspezifisch \textcolor{blue}{Abbildung: Townsend-Koeffizienten}. Die Ladungsverstärkung ist demnach abhängig von der Wahl des Aktiven Mediums und ist ihrerseits Thema kontinuierlicher Untersuchung \cite{GAS_MIX}. 
+				Diese Untersuchungen erlauben nun eine informierte Wahl des Aktiven Mediums, indem man einige Auswahlkriterien definiert und die Mixtur auswählt, die diese Kriterien erfüllt:\\
 				\\
-				Um eine möglichst große Elektronenausbeute zu garantieren, wird im folgenden Argon verwendet, das Argon vergleichsweise niedrige Ionisationsenergien hat (siehe Tabelle \ref{tab:Ionisationsenergien}), wobei CO$_{2}$ als Quench-Gas beigemischt wird. Das Mischungsverhältnis der Gase wird im Folgenden $90-10$ sein, dies erlaubt eine adäquate Ausnutzung der in [ABSCHNITT] erwähnten Effekte.
+				Ausgehend davon, dass das aktive Medium immer einer externen Energie ausgesetzt ist, sind chemische Reaktionen mit der Detektorbegrenzung oder dem Quencher-Gas im Allgemeinen nicht auszuschließen. Entsprechend können sich durch Reaktionen Alterungserscheinungen ausbilden, die den Detektorbetrieb beeintächtigen \cite{Ageing}. Daher ist ein möglichst reaktionsträges Element als Basis des aktiven Mediums zu verwenden. Edelgase sind in dieser Hinsicht bestens geeignet.\\
+				Unter den Edelgasen gibt es neben Kriterien wie Verfügbarkeit und damit verbunden den Kosten noch andere physikalische Einschränkungen, die die Kandidaten für die Basis des aktiven Mediums begrenzen. Neben einer hinreichend kleinen Ionisationsenergie sind daher Diffusionskoeffizienten und Molekülmobilität weitere Einschränkungen an das Gas. \\
+				Um eine möglichst große Elektronenausbeute zu garantieren, wird im folgenden Argon verwendet, das Argon vergleichsweise niedrige Ionisationsenergien hat (siehe Tabelle \ref{tab:Ionisationsenergien}), wobei CO$_{2}$ als Quench-Gas beigemischt wird. Das Mischungsverhältnis der Gase wird im Folgenden $90\%-10\%$ sein, dies erlaubt eine adäquate Ausnutzung der in \ref{chap:Sekundär} erwähnten Effekte.
 				
 				\begin{table}[h]
 					\centering
@@ -131,32 +140,37 @@
 					\label{tab:Ionisationsenergien}
 				\end{table}
 				
-				
+				\newpage
 			\subsubsection{Energieauflösung eines Detektors}
-				Die Strahlung, die bei Kernprozessen emittiert wird ist diskret. Idealerweise ist die Strahlung hierbei monochromatisch, wobei die natürliche Linienbreite zu beachten ist. Detektoren werden die Linien dabei im Allgemeinen nicht so genau nachweisen können, sie haben eine intrinsiche Energeiauflösung. Die Energieauflösung bei Gasdetektoren setzt sich im Wesentlichen aus zwei Anteilen zusammen:
+				Wird monochromatische Strahlung in einen Detektor gestrahlt, sollte dieser ein Signal erzeugen. welches zu der Energie des monochromatischen Strahlung passt. Das Messergebnis ist allerdings keinesfalls eine diskrete Linie, sondern hat ein Semi-Gaußprofil. Für einen Gasdetektor (ohne Ausleseelektronik) gibt es einige Mechanismen, die zu dieser Form beitragen. Die wichtigsten sollen hier kurz umrissen werden:
 				\begin{enumerate}
-					\item Ionisationsfluktuationen: Die Primärionisationsvorgänge sind bekanntermaßen ein statisticher Prozess. Da die Ereignisse nicht gänzlich statistisch unabhängig sind [ZITAT], muss die Standardabweichung der Poission-Verteilung um den Fanofaktor korrigiert werden, es ergibt sich ein Anteil zur Auflösung der folgenden Form:
+					\item \textbf{Primär-Ionisationsfluktuationen}: Die Zahl der durch ein Photon der Energie $E_{\gamma}$ erzeugten Elektronen-Ionen-Paare kann mit Gleichung \ref{eq:Primärionisation} abgeschätzt werden. Aus der statistischen Natur der Prozesse folgen allerdings Fluktuationen um den Mittelwert. Um diese adäquat abzuschätzen, muss beachtet werden, dass die Ionisationsprozesse in diesem Fall nicht gänzlich unabhängig sind, sodass die Abschätzung der rein statistischen Fluktuationen (Poisson) um den Fano-Faktor $F$ korrigiert werden muss \cite{ottnad},\cite{Leo}. Insgesamt ergibt sich dann eine Energieauflösung der folgenden Form: 
 					\begin{equation*}
 						R=\frac{\sqrt{F}}{N}
 					\end{equation*}
-					\item Verstärkungsfluktuationen: Auch die Sekundärionisationsprozesse sind statistische Prozesse, die sehr wesentlich fluktuieren können, sodass sie einen signifikaten Einfluss auf die Auflösung hat. Es ergibt sich ein Anteil der folgenden Form:
+					\item \textbf{Verstärkungsfluktuationen}: In Proportionalkammern kommt eine Fluktuation für die Sekundärionisationsprozesse der einzelnen Elektronen dazu. Unter der Annahme, dass das $i$-te Elektron eine Zahl $G_{i}$ von Sekundärelektronen produziert, stellt sich die Gain offenbar als Mittelwert der Sekundärelektronen über alle Prozesse dar. Die Fluktuationen aus dem einzelnen Prozess pflanzen sich dann entsprechend auf die Gain fort. Unter der Annahme, dass die Fluktuationen $\sigma_{\text{G}_{i}}$ gleich sind gilt demnach:
 					\begin{equation*}
-						R= 
+						\sigma_{\text{G}}= \frac{\sigma_{\text{G}_{i}}}{\sqrt{N}}
 					\end{equation*}
-				\end{enumerate}
-				Man kann nun beide Anteile komninieren, und so eine Abschätzung  für die Gesamtenergieauflösung zu erhalten. Experimentell bestimmt sich die Energieauflösung durch die Auswertung eines wohlbekannten Spektrums [EISENSPEKTRUM], bei dem man eine bekannte Linie messen kann, um anschließend eine Kurve daran anzupassen und aus der Halbwertsbreite folgende Abschätzung zu verwenden:
+				Für den Anteil durch die Verstärkungsflukturationen gilt demnach dann \cite{ottnad}:
 				\begin{equation*}
-					R=\frac{\Delta E}{E}= \frac{\sigma_{K_{\text{alpha}}}}{\mu_{K_{\alpha}}}
+					R=\frac{\sigma_{\text{G}}}{G}
 				\end{equation*}
-				Eine Beschreibung der hier verwendeten Formelzeichen zur experimentellen Bestimmung findet sich in Kapitel [FESPEKTRUM]
+				\end{enumerate}
+			Die Kombination beider Fluktuationsbeiträge ergibt zusammen mit einem Rauschbeitrag durch elektronisches Rauschen die Energieauflösung. Experimentell bestimmt sie sich durch die Auswertung eines wohlbekannten Spektrums, bei dem man eine bekannte Linie messen kann, um anschließend eine Kurve daran anzupassen und aus der Halbwertsbreite folgende Abschätzung zu verwenden:
+				\begin{equation*}
+					R=\frac{\Delta E}{E}= \frac{\sigma_{{\text{Photo}}}}{\mu_{\text{Photo}}}
+				\end{equation*}
+			Detaillierte Darstellungen zur Verwendeten Strahlung, mit der diese Bestimmung durchgeführt werden finden sich in Abschnitt  \ref{sec:Fe55}. In diesem Zusammenhang wird die Nomenklatur der einzelnen Signalanteile sowie die Benennung der hier bereits verwendeten Formelzeichen durchgeführt.
 			
 			
 
 \chapter{Gas Electron Multiplier}
-Ordinäre Proportionalkammern sind natürlichen Problemen und Limitationen unterworfen. Beispielsweise sind die erreichbaren Verstärkungen durch das Raether-Limit oder durch die Proportionalitätsgrenzen der Kammer beschränkt, da sich sonst Raumladungen bilden, die aus Ionen bestehen und durch die Kammer propagieren, während sie das Feld in einer Form verzerren, die eine Multiplikation unmöglich macht. Der Ansatz, mit dem sich das Problem lösen lässt, ist die Einführung einer speziellen Detektorgeometrie. Eine Realisation dieser Geometrie sind die Multi-wire-proporional Chambers (MWPC), deren Funktionsweise extensiv in \cite{Sauli_Multiwire} diskutiert wird. 		In dieser Arbeit wollen wir eine andere Detektorgeometrie untersuchen, die Gas Electron Multiplier (GEM), die in diesem Kapitel eingeführt werden sollen:			 
-				
-\section{Aufbau und Funktionsweise einer GEM-Verstärkungsstufe}
-GEM-Verstärkungsstufen sind dünne Isolatorfolien bestehend aus Polymiden, an deren Ober- und Unterseite eine Kupferbeschichtung anliegt. Um eine Nutzbarkeit als Verstärkerstufe zu gewährleisten werden Löcher in diese Platte geätzt, es ergibt sich eine Hexagonale Struktur wie in Abbildung \ref{fig:Draufsicht}. Mit der Hexagonalen Struktur ist der Abstand zweier Benachbarter Löcher paarweise gleich, dieser Abstand wird im folgenden als Pitch bezeichnet. Die Eigenschaften der Foliengeometrie wurden in der Vergangenheit bereits extensiv studiert \cite{Sauli_Übersicht}, auf Basis dieser Untersuchungen haben sich spezielle Konfigurationen etabliert, entsprechend dieser Konvention werden für diese Folien GEM-Folien im Standardformat verwendet, die Parameter der Folie sind als Querschnitt der Folie in Abbildung \ref{fig:Querschnitt} zu sehen.
+Ordinäre Proportionalkammern sind natürlichen Problemen und Limitationen unterworfen, die in Abschnitt \ref{sec:IonisationsundProportionalkammern} allgemein diskutiert wurden. Genauere Untersuchungen erzwingen allerdings elaborierte Detektorkonzepte, die dann ggf. die Orts- und Spurrekonstruktion ermöglichen, um Zerfälle zu Berücksichtigen. Eine erste Möglichkeit dies zu realisieren waren Vieldraht-Proportionalkammern (MWPC), bei denen die Rekonstruktion durch die Verwendung und Auslese von vielen Proportionalzählern ermöglicht wurde. Eine extensive Erklärung der Funktionsweise findet sich in \cite{Sauli_Multiwire}.\\
+Um präzisere Rekonstruktionen zu ermöglichen, ist es in diesem Falle sinnig die Auslesestruktur genauer zu segmentieren, wobei genauere Ergebnisse genau dann möglich sind, wenn die Verstärkerstufen gleichermaßen mikrostruktuiert sind. In diesem Kontext treten die Gas Electron Multiplier (GEMs) auf, die dies ermöglichen. Im folgenden Kapitel soll das Konzept dieser Detektorgeometrie diskutiert werden, um auf diese Weise die weitreichenden Vorteile dieser Anordnung zu erläutern.
+
+\section{Aufbau und Funktionsweise einer GEM-Verstärkungsstufe} 
+Ganz allgemein sind GEMs mikrostruktuierte Versionen von Proportionalkammern. Da man sie in diesem Format \enquote{hintereinanderschalten} kann wird im Folgenden von Verstärkerstufen gesprochen. GEM-Verstärkerstufen sind dünne Isolatorfolien bestehend aus Polyamiden, an deren Ober- und Unterseite je eine Kupferbeschichtung anliegt. Die Strukturierung der Stufe erfolgt dadurch, dass Löcher in die Folien geätzt werden, sodass sich eine hexagonale Struktur ausbildet (siehe Abbildung \ref{fig:Draufsicht}). Der Abstand zweier paarweise benachbarter Löcher, im Folgenden Pitch, ist daher stets gleich. Die Eigenschaften der Foliengeometrie (Pitch und Lochradien) wurden in der Vergangenheit bereits extensiv studiert \cite{Sauli_Übersicht}, auf Basis dieser Untersuchungen haben sich spezielle Konfigurationen etabliert, entsprechend dieser Konvention werden für diese Folien GEM-Folien im Standardformat verwendet, die Parameter der Folie sind als Querschnitt der Folie in Abbildung \ref{fig:Querschnitt} zu sehen.
 
 	\begin{figure}[h]
 		\centering
@@ -174,15 +188,20 @@ GEM-Verstärkungsstufen sind dünne Isolatorfolien bestehend aus Polymiden, an d
 		
 		
 		
-\noindent Legt man an die Kupferdecken eine Spannung an, wird in den Löchern ein starkes Feld induziert, legt man eine Spannung von $100 V$ an die GEM-Folie an, wird in den Löchern ein Feld der Größenordnung von $20.000\ \si{V/cm}$ induziert. Diese Felder sind hinreichend stark, um die in Absatz \ref{sec:Ladungsmultiplikation} diskutierten Ladungsmultipliationsmechanismen auszulösen. Es ist daher einzusehen, dass die Signalverstärkung in einer GEM-Stufe mit vergleichsweise geringem Aufwand potentiell sehr groß werden kann; es ist daher zum Zwecke eines stabilen Betriebes als Proportionalverstärker darauf zu achten, die Gain nach oben zu limitieren. Es ist in diesem Zusammenhang dennoch möglich, dass durch die statistische Verteilung der Energien der Primärelektronen Gasentladungen in den Folien zu Tage treten können. Diese können durch den Detektor propagieren und die Folie oder die Periphäre Ausleseelektronik beschädigen. Es ist daher angemessen die Ausleseelektronik hinreichend weit von der Verstärkung zu entfernen und ein deutlich schwächeres Feld zu verwenden, um die Elektronenwolke zur Ausleseelektronik zu befördern, wo dann ein Signal induziert wird. Schematisch ergibt sich eine Struktur wie in Abbildung
+\noindent Die Wesentliche Stärke dieses Ansatzes ist der Umstand, dass man nur eine vergleichsweise kleine Spannung zwischen den Kupferplatten anlegen muss, um große Felder innerhalb der Löcher zu erzeugen. So führt bspw. eine Potentialdifferenz von $100\ \si{V} $ zu einem Feld der Größenordnung von $20.000\ \si{V/cm}$. Ein Vergleich mit Abbildung \textcolor{blue}{Townsend-Koeffizient} offenbart, dass in dieser Region eine starke Ladungsmultiplikation auftritt. Durch die starke räumliche Begrenzung der einzelnen Verstärkungvolumina wird ebenfalls der störende Einfluss der Ionen reduziert, da die Distanzen, die die Ionen zurücklegen müssen, um an einer Elektrode mit einem Elektron zu rekombinieren vergleichsweise gering ist. Um das Einzusehen, sind die Äquipotentialflächen eines GEM-Feldes in Abbildung \textcolor{blue}{GEM-Feld} dargestellt. Diese Konstruktion erlaubt es demnach bei potentiell höheren Verstärkungen zu operieren, ohne dass Informationen über die im Detektor deponierte Energie verloren gehen. \\
+\\
+Da es sich bei den einzelnen GEM-Löchern im Wesentlichen um Proportionalkammern handelt, gelten die in Abschnitt \ref{sec:IonisationsundProportionalkammern} diskutierten Grenzen für jedes der Löcher individuell. Es ist allerdings so, dass die Verstärkung in den Folien, also entsprechend elektronisch getrennt von der Ausleseelektronik insofern vorteilhaft ist, dass Gasentladungen die Ausleseelektronik im Allgemeinen nicht erreichen und sie so nicht zerstören können. Es ist allerdings möglich. dass Gasentladungen in den Löchern der Folie auftritt und auf diese Weise die Folie schädigt. Es ist also geboten die Folie bei moderater Verstärkung. in Einklang mit den diskutierten Limits zu verwenden.
 			
 
 
 
 \section{Multi-GEM-Strukturen}
-Ähnlich zu den einfachen Proportionalkammern haben Single-GEM-Detektoren wesentliche Gain Limitationen. Möchte man höhere Verstärkungen bei stabilerem Betrieb erreichen, kann man mehrere Verstärkerstufen hintereinander betreiben. Je nach Abstand der Folien, können Diffusionseffekte dafür sorgen, dass Elektronen, die aus einem GEM-Folienloch ausgegeben werden in mehreren GEM-Löchern der Folgefolie verstäkrt werden. Auf diese Weise wird das Raether-Limit, welches für eines der GEM-Löcher gilt umgangen.\\
-Es ist ferner so, dass die Spannungen die an einer Folie angelegt werden reduziert werden können, um dennoch dieselbe Verstärkung zu erreichen. Die Nutzung mehrerer Stufen erlaubt also einen Stabileren Betrieb, da die Discharge-Wahrscheinlichkeit erheblich sinkt. [GAIN-PLOTS]. Die Übergabe der Elektronen von einer Folie zur anderen erfolgt dabei über die Transferfelder. Während es potentiell möglich ist eine große Zahl von Folien zu verwenden, bietet es sich an eine Konstallation genauer zu unteruschen, die Triple-GEM-Detektoren. Der schematische Aufbau eines solchen Detektors ergibt sich aus Abbildung [SCHEMATIC].\\
-IONEN-BACKFLOW
+	Neben den bisher erörterten Vorteilen wird das tatsächliche Potential von GEM-Stufen erst dann voll ausgeschöpft, wenn man mehrere von ihnen hintereinander verwendet. Auf diese Weise können die Elektronen, die aus einer ersten Verstärlungsstufe kommen an eine zweite übergeben werden, um dort weitere Multiplikationsschritte zu durchlaufen. Dies ermöglicht das Erreichen vergleichbarer Verstärkungen bei kleinerem Aufwand und so vergleichsweise seltener Gasentladungen. \\
+	Die Verwendung einer solchen Anordnung wird genau dann noch potenter, wenn man Driftkammern zwischen die Proportionalkammern setzt, da auf diese Weise Gasentladungen zwischen den Folien unterbunden werden und Diffusionserscheinungen dafür sorgen, dass die Elektronen aus einer Verstärkungsstufe nicht in ein GEM-Loch der darauffolgenden Stufe geraten, sondern in Mehrere. Damit wird das Raether-Limit für Proportionalkammern effektiv umgangen, und es ist möglich, höhere Verstärkungen zu erzielen, ohne dass Gasentladungen signifikant wahrscheinlicher werden. Eine solche Konfiguration bezeichnet man als Multi-GEM-Detektor. In Abbildung \textcolor{blue}{Schematischer Aufbau Triple-GEM} wird der schematische Aufbau eines Triple-GEM Detektors gezeigt. Hierbei definieren wir direkt die Namen der Felder, die im folgenden von Interesse sein werden. Die exakte Anordungen der Folie war in der Vergangenheit bereits Thema zahlreicher Optimierungsversuche. In diesem Kontext hat sich gezeigt, dass der Störeinfluss durch die Ionen noch effektiver reduziert werden kann, wenn die Folien um $90^{\circ}$ gegeneinander rotiert werden. Dies limitiert die Ionen auf den Bereich zwischen zwei GEM-Folien und verhindert so erhebliche Störungen durch die Propoagation der Ionen durch den Detektor.
+	
+	
+	
+	\newpage
 
 \section{Effektive Gain und Transfereffizienzen}
 In einem Idealen System würden alle Elektronen, die bei der Verstärkung erzeugt werden auch in die nächste Verstärkerstufe und so zur Ausleseelektronik gelangen. In der Praxis ergeben sich im Wesentlichen drei Wege, über die Elektronen für die anderen Stufen verloren gehen können:
@@ -199,4 +218,4 @@ Hierbei bezeichnet die Kollekttionseffizienz $\epsilon_{\text{coll}}$ die Zahl d
 \begin{equation}
 	G_{\text{eff}}= \epsilon_{\textbf{coll}} \epsilon_{\text{extr}} G_{\text{abs}}
 \end{equation}
-Die effektive Verstärkung ist hierbei offenbar die Messbare Quantität (siehe Abschnitt Optimierungsroutine). Ein Vergleich der Größen findet sich in [ABBILDUNG]
+Die effektive Verstärkung ist hierbei offenbar die Messbare Quantität und ist im Allgemeinen kleiner als die Absolute Verstärkung. Die Transfereffizienzen waren in der Vergangenheit bereits Thema von unterschiedlichen Verständnis und Optimierungsprozessen. In diesem Zusammenhang konnte gezeigt werden, dass die Transfereffizienzen vom Verhältnis der angrenzenden Felder abhängig ist. Insbesondere sind die Kollektionseffizienzen also abhängig von dem GEM-Feld und dem Feld, dass die Teilchen übergibt; die Extraktionskoeffizienten sind abhängig vom den GEM-Feldern und dem Feld, dass die Elektronen extrahiert.
