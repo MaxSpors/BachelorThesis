@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {1}Vorbereitung: Aufbau und Qualitätssicherung des Detektors}{11}{section.4.1}%
 \contentsline {section}{\numberline {2}Messmethodik}{11}{section.4.2}%
 \contentsline {subsection}{\numberline {2.1}Über die Eignung von $\ce {^{55}}$Fe-Isotopen}{11}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {2.2}Experimentelle Bestimmung der Verstärkung}{11}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {2.2}Experimentelle Bestimmung der Verstärkung}{12}{subsection.4.2.2}%
 \contentsline {section}{\numberline {3}Optimierungsmethodik}{13}{section.4.3}%
 \contentsline {section}{\numberline {4}Referenzbestimmung}{13}{section.4.4}%
 \contentsline {section}{\numberline {5}Parameterscans für die einzelnen Felder}{13}{section.4.5}%

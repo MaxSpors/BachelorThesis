@@ -3,12 +3,35 @@
 	
 	\section{Messmethodik}
 		\subsection{Über die Eignung von $\ce{^{55}}$Fe-Isotopen}
-			Die Untersuchung der Wirkungen der einzelnen Felder eines Triple-GEM-Detektors auf seine Energieauflösung und Verstärkung setzt eine fundierte Kenntnis der einfallenden Strahlung voraus. Neben einem vergleichsweise einfachen Spektrum gibt es überdies noch weitere Eigenschaften, die die Strahlenquelle erfüllen sollte, um gut für einen Optimierungsprozess geeignet zu sein. Im folgenden werden diese Eigenschaften am Beispiel einer Eisenquelle erklärt:\\
+			Die Untersuchung der Effekte der einzelnen Felder eines Triple-GEM-Detektors auf seine Energieauflösung und Verstärkung erfordert eine fundierte Kenntnis der zur Messung verwendeten Strahlung. Eine geeignete Strahlenquelle muss daher einige Anforderungen erfüllen, um den Optimierungsprozess zu ermöglichen. Die Eignung einer  $\ce{^55Fe}$ Quelle kann dabei wie folgt begründet werden:\\
 			\\
-			Das Eisenisotop $\ce{^55 Fe}$ zerfällt über einen K-Einfang in ein Manganisotop, welches unter Emission von Röntgenstrahlung in seinen energetischen Grundzustand zerfällt. Die Halbwertszeit des Isotops liegt bei $2,75 \si{a}$ \cite{Half_Life_FE55}, damit ist sichergestellt, dass die Quelle für den Zeitraum des Optimierungsprozesses eine konstante Strahlleistung und damit einen näherungsweise konstanten Energiepegel aufweist.\\
-			Ferner wird das Zerfallsspektrum von den $K_{\alpha}-$ und $K_{\beta}$-Linien dominiert (vergleiche Tabelle ), sodass im Allgemeinen davon ausgegangen werden kann, dass die gesamte Energie im System deponiert wird (siehe Kapitel \ref{chap:Photonen}), damit kann sichergestellt werden, dass statstische Unsicherheiten bei der Energiedeponierung, die sich in der Energieauflösung niederschlagen würden, minimiert werden.\\
-			Darüber hinaus sollten die Quelle und ihre Zerfallsprodukte gut charakterisiert sein. Es ist entscheidend, dass die Zerfallsprodukte nicht über Teilchenzerfälle oder hochenergetische Photonen weiter zerfallen, da dies zu unerwünschten Verzerrungen der Messergebnisse führen kann, da das Manganisotop stabil ist, erweist sich Eisen-55 als hinreichend geeignet zur Optimierung des Detektors.\\
+			Das Isotop $\ce{^55Fe}$ zerfällt durch K-Einfang zu Mangan, welches durch Emission von Röntgenstrahlung in seinen Grundzustand übergeht, das resultierende Mangan-Isotop $\ce{^55 Mn}$ ist stabil. Mit einer Halbwertszeit von 2,75 Jahren \cite{Half_Life_FE55} gewährleistet die Quelle während des gesamten Optimierungsprozesses eine konstante Strahlleistung und so einen stabilen Energiepegel. Insbesondere sind Verzerrungen durch Sekundärzerfälle ausgeschlossen.\\
 			\\
+			Das Spektrum wird hauptsächlich von den $K_{\alpha}$- und $K_{\beta}$-Linien dominiert, was sicherstellt, dass die gesamte Energie im System deponiert wird (siehe Kapitel \ref{chap:Photonen
+			}). Dadurch werden statistische Unsicherheiten in der Energiedeposition und damit verbundene Einflüsse auf die Energieauflösung minimiert. Eine Sammlung der relevanten Eisenlinien findet sich in Tabelle \ref{tab:Eisenlinien}.
+			
+			\begin{table}[h!]
+				\centering
+				\begin{tabular}{|l|c|c|}
+					\hline
+					\textbf{Linie} & \textbf{Energie / keV} & \textbf{Rel. Intensität} \\ \hline
+					K\textsubscript{$\alpha$}-Photo 1    & 5,755         & 0,540           \\ \hline
+					K\textsubscript{$\alpha$}-Photo 2    & 5,716         & 0,117           \\ \hline
+					K\textsubscript{$\alpha$}-Photo 3    & 5,815         & 0,078           \\ \hline
+					\textbf{K\textsubscript{$\alpha$}-Photo}  & 5,755         & 0,777           \\ \hline
+					\textbf{K\textsubscript{$\alpha$}-Escape} & 2,892         & 0,121           \\ \hline
+					K\textsubscript{$\beta$}-Photo 1     & 6,351         & 0,061           \\ \hline
+					K\textsubscript{$\beta$}-Photo 2     & 6,312         & 0,013           \\ \hline
+					K\textsubscript{$\beta$}-Photo 3     & 6,411         & 0,009           \\ \hline
+					\textbf{K\textsubscript{$\beta$}-Photo}  & 6,351         & 0,088           \\ \hline
+					\textbf{K\textsubscript{$\beta$}-Escape} & 3,488         & 0,014           \\ \hline
+				\end{tabular}
+				\caption{Dominierende Linien des Eisenspektrums einer $\ce{^55 Fe}$-Quelle, entnommen aus \cite{ottnad}}
+				\label{tab:Eisenlinien}
+			\end{table}
+			
+			
+			\noindent Die im Optimalfall erreichbare Energieauflösung überschreitet die Energieabstände der einzelnen $K$ Linien. Diese Aussage trifft sowohl für den Photopeak, als auch für den Escape-Peak zu, sodass diese offenbar nicht eindeutig auflösbar sind. Die Bestimmung der Detektorparameter stützt sich auf die Bestimmung der Parameter des Photopeaks, es wird demnach das Spektrum angepasst, das aufgrund der Nähe der Linien vollumfänglich durch folgende Funktion beschrieben werden kann \cite{Hauer}
 			 
 
 			
