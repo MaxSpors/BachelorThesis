@@ -171,13 +171,12 @@ Um eine präzisere Rekonstruktion zu gewährleisten, ist es sinnvoll, die Ausles
 
 \section{Aufbau und Funktionsweise einer GEM-Verstärkungsstufe} 
   GEMs sind zunächst einmal mikrostruktuierte Versionen von Proportionalkammern. Wegen ihrer Bauweise können sie hintereinander geschaltet werden, sodass wir im folgenden von Verstärkerstufen sprechen. GEM-Verstärkerstufen sind dünne Polyamidfolien, die beidseitig mit Kupfer beschichtet sind. Die Strukturierung der Stufe erfolgt dadurch, dass Löcher in die Folien geätzt werden, sodass sich eine hexagonale Struktur ausbildet (siehe Abbildung \ref{fig:Draufsicht}). Der Abstand zweier paarweise benachbarter Löcher, im Folgenden Pitch, ist daher stets gleich.\\
-  \\
    Die Eigenschaften der Foliengeometrie, insbesondere Pitch und Lochradien, wurden in der Vergangenheit umfassend untersucht \cite{Sauli_Übersicht}. Basierend auf diesen Untersuchungen haben sich spezifische Konfigurationen etabliert, und entsprechend dieser Konvention werden GEM-Folien im Standardformat verwendet, die Parameter der Folie sind als Querschnitt der Folie in Abbildung \ref{fig:Querschnitt} zu sehen.
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.15]{Topside_UpperLeft.jpg}
-		\caption{Draufsicht auf einen Folienausschnitt aufgenommen mit einem Mikroskop [MODELL?], ausgezeichnet ist der ein Maßstab von $140 \si{\mu m}$}
+		\caption{Draufsicht auf Folienausschnitt aufgenommen mit einem Digitalmikroskop Modell VHX-200 \cite{MikroskopReinraum}, ausgezeichnet ist der ein Maßstab von $140 \si{\mu m}$}
 		\label{fig:Draufsicht}
 	\end{figure}
 
@@ -201,12 +200,13 @@ Da es sich bei den einzelnen GEM-Löchern im Wesentlichen um Proportionalkammern
 	Neben den bisher erörterten Vorteilen wird das volle Potenzial von GEM-Stufen erst dann ausgeschöpft, wenn mehrere Stufen hintereinander geschaltet werden. Auf diese Weise können die Elektronen, die aus einer ersten Verstärkungsstufe hervorgehen, an eine zweite Stufe übergeben werden, um dort weitere Multiplikationsschritte zu durchlaufen. Dies ermöglicht das Erreichen hoher Verstärkungen mit geringerem Aufwand und reduziert somit die Häufigkeit von Gasentladungen. \\
 	Die Übergabe zwischen den Verstärkungstufen erfolgt über Driftkammern. So werden Gasentladungen zwischen den Folien verhindert, und Diffusionseffekte sorgen dafür, dass die Elektronen aus einer Verstärkungsstufe nicht nur in ein einzelnes GEM-Loch der nachfolgenden Stufe gelangen, sondern in mehrere. Dies erlaubt es, das Raether-Limit für Proportionalkammern effektiv zu umgehen und höhere Verstärkungen zu erzielen, ohne das Risiko von Gasentladungen signifikant zu erhöhen. Eine solche Konfiguration wird als Multi-GEM-Detektor bezeichnet.\\
 	\\
-	 In Abbildung \textcolor{blue}{Schematischer Aufbau Triple-GEM} wird der schematische Aufbau eines Triple-GEM Detektors gezeigt. Hierbei definieren wir direkt die Namen der Felder, die im folgenden von Interesse sein werden. Die exakte Anordungen der Folie war in der Vergangenheit bereits Thema zahlreicher Optimierungsversuche. In diesem Kontext hat sich gezeigt, dass der Störeinfluss durch die Ionen noch effektiver reduziert werden kann, wenn die Folien um $90^{\circ}$ gegeneinander rotiert werden. Dies limitiert die Ionen auf den Bereich zwischen zwei GEM-Folien und verhindert so erhebliche Störungen durch die Propoagation der Ionen durch den Detektor.
+	 In Abbildung \ref{fig:Konzeptskizze GEM Aufbau} wird der schematische Aufbau eines Triple-GEM Detektors gezeigt. Hierbei ahmt die Abbildung die tatsächliche Struktur des verwendeten Setups nach, statt auf die konzeptionelle Funktionsweise zu setzen. Diese Anordnung der Folien ist Resultat zahlreicher Optimierungsversuche. In diesem Kontext hat sich gezeigt, dass der Störeinfluss durch die Ionen noch effektiver reduziert werden kann, wenn die Folien um $90^{\circ}$ gegeneinander rotiert werden. Dies limitiert die Ionen auf den Bereich zwischen zwei GEM-Folien und verhindert so erhebliche Störungen durch die Propoagation der Ionen durch den Detektor.
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{Querschnitt Detektor.png}
-		\caption{Querschnitt eines Triple-GEM Detektors mit segmentierter Ausleseelektronik. Die Abstände der einzelnen Stufen zueinander sind auf das verwendete Setup angepasst, zusätzlich wurde die Nomenklatur der Felder angepasst}
+		\caption{Querschnitt eines Triple-GEM Detektors mit segmentierter Ausleseelektronik. Die Abstände der einzelnen Stufen zueinander sind auf das verwendete Setup angepasst, zusätzlich wurde die Nomenklatur der Felder angepasst (modifiziert nach \cite{Sauli_Übersicht})}
+		\label{fig:Konzeptskizze GEM Aufbau}
 	\end{figure}
 	
 	
@@ -216,7 +216,7 @@ Da es sich bei den einzelnen GEM-Löchern im Wesentlichen um Proportionalkammern
 In einem Idealen System würden alle Elektronen, die bei der Verstärkung erzeugt werden auch in die nächste Verstärkerstufe und so zur Ausleseelektronik gelangen. In der Praxis ergeben sich im Wesentlichen drei Wege, über die Elektronen für die anderen Stufen verloren gehen können:
 \begin{enumerate}
 	\item Wechselwirkung mit der oberen Kupferplatte: Die Elektronen werden von dem GEM-Feld im Allgemeinen in das Loch gesaugt, es gibt jedoch einen Teil der Elektronen, die nicht eingesaugt werden, sondern von der Kupferplatte abgefangen werden. Diese Elektronen stehen offenbar nicht mehr für die Verstärkung zur Verfügung
-	\item Verluste durch Polymid-Interaktion: Elektronen, die in die Verstärkerstufe aufgenommen wurden, können von der Berandung der Löcher aufgenommen werden und stehen so nicht mehr zur Verfügung
+	\item Verluste durch Polyamid-Interaktion: Elektronen, die in die Verstärkerstufe aufgenommen wurden, können von der Berandung der Löcher aufgenommen werden und stehen so nicht mehr zur Verfügung
 	\item Wechselwirkungen mit der unteren Kupferplatte: Die Elektronen, die aus der Verstärkerstufe extrahiert werden, können bei der Extrahktion durch das GEM-Feld auf die untere Platte beschleunigt werden. Diese können dann offenbar nicht mehr weiterverwendet werden. 
 \end{enumerate}
 Physikalisch steht dahinter die Intuition, ob die Felder in einer Art zusammenwirken, die die Übergabe der Elektronen der Drift- und Transferfelder an GEM-Stufen begünstigen oder erschweren. Zu diesem Zweck definieren wir die Transfereffizienzen:
