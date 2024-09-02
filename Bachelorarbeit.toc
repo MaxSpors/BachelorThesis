@@ -1,6 +1,6 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {chapter}{\numberline {I}Einleitung}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {II}Das Prinzip von Gasdetektoren}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {II}Funktionsweise von Gasdetektoren}{2}{chapter.2}%
 \contentsline {section}{\numberline {1}Wechselwirkungen von ionisierender Strahlung mit Materie}{2}{section.2.1}%
 \contentsline {subsection}{\numberline {1.1}Photonen in Materie}{2}{subsection.2.1.1}%
 \contentsline {subsubsection}{\nonumberline Photoelektrischer Effekt}{3}{subsubsection*.4}%
@@ -10,7 +10,7 @@
 \contentsline {subsubsection}{\nonumberline Lokale Clusterbildung}{4}{subsubsection*.10}%
 \contentsline {subsubsection}{\nonumberline Penning-Effekt}{4}{subsubsection*.12}%
 \contentsline {subsubsection}{\nonumberline Auger-Meitner-Effekt}{4}{subsubsection*.14}%
-\contentsline {subsubsection}{\nonumberline $\delta $-Elektronen und nicht-lokale Clusterbildung}{4}{subsubsection*.16}%
+\contentsline {subsubsection}{\nonumberline $\delta $-Elektronen}{4}{subsubsection*.16}%
 \contentsline {section}{\numberline {2}Bewegungen von Ladungen}{5}{section.2.2}%
 \contentsline {subsection}{\numberline {2.1}Diffusion}{5}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2}Bewegung von Ladungsträgern in Feldern}{5}{subsection.2.2.2}%
@@ -27,28 +27,28 @@
 \contentsline {chapter}{\numberline {IV}Optimierung der Verstärkung eines Triple GEM Detektors}{14}{chapter.4}%
 \contentsline {section}{\numberline {1}Aufbau des Detektors}{14}{section.4.1}%
 \contentsline {subsection}{\numberline {1.1}Detektorkonfiguration}{14}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {1.2}Auslese- und Betriebselektronik}{14}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {1.2}Auslese- und Betriebselektronik}{15}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {1.3}Gasqualitätssicherung und Druck-Temperatur-Überwachung}{15}{subsection.4.1.3}%
 \contentsline {section}{\numberline {2}Messmethodik}{15}{section.4.2}%
 \contentsline {subsection}{\numberline {2.1}Über die Eignung von $\ce {^{55}}$Fe-Isotopen}{15}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {2.2}Experimentelle Bestimmung der Verstärkung}{16}{subsection.4.2.2}%
-\contentsline {section}{\numberline {3}Optimierungsmethodik}{17}{section.4.3}%
-\contentsline {section}{\numberline {4}Referenzbestimmung}{17}{section.4.4}%
-\contentsline {subsection}{\numberline {4.1}Methode}{17}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.2}Ergebnisse}{17}{subsection.4.4.2}%
-\contentsline {section}{\numberline {5}Parameterscans für die einzelnen Felder}{18}{section.4.5}%
-\contentsline {subsection}{\numberline {5.1}Untersuchung der Wirkung der Felder auf die Transfereffizienzen}{18}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {5.2}Bestimmung der Auswahlintervalle}{18}{subsection.4.5.2}%
-\contentsline {section}{\numberline {6}Konstruktion und Überprüfung interessanter Detektorkonfigurationen}{19}{section.4.6}%
-\contentsline {chapter}{\numberline {V}Optimierung der Energieauflösung eines Triple-GEM-Detektors}{20}{chapter.5}%
-\contentsline {section}{\numberline {1}Messmethodik}{20}{section.5.1}%
-\contentsline {section}{\numberline {2}Optimierungsmethodik}{20}{section.5.2}%
-\contentsline {section}{\numberline {3}Parameterscans für die einzelnen Felder}{20}{section.5.3}%
-\contentsline {section}{\numberline {4}Konstruktion und Überprüfung interessanter Detektorkonfigurationen}{20}{section.5.4}%
-\contentsline {chapter}{\numberline {VI}Bestimmung des Operations-Optimums}{21}{chapter.6}%
-\contentsline {section}{\numberline {1}Konstruktion von Feldkonfigurationen unter Berücksichtigung von Auflösung und Verstärkung}{21}{section.6.1}%
-\contentsline {section}{\numberline {2}Experimentelle Analyse der Konstruierten Konfigurationen}{21}{section.6.2}%
-\contentsline {chapter}{\numberline {VII}Zusammenfassung und Ausblick}{22}{chapter.7}%
-\contentsline {section}{\numberline {1}Zusammenfassung}{22}{section.7.1}%
-\contentsline {section}{\numberline {2}Ausblick: Optimierung auf Orts- und Zeitauflösung}{22}{section.7.2}%
+\contentsline {section}{\numberline {3}Optimierungsmethodik}{18}{section.4.3}%
+\contentsline {section}{\numberline {4}Referenzbestimmung}{18}{section.4.4}%
+\contentsline {subsection}{\numberline {4.1}Methode}{18}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.2}Ergebnisse}{18}{subsection.4.4.2}%
+\contentsline {section}{\numberline {5}Parameterscans für die einzelnen Felder}{19}{section.4.5}%
+\contentsline {subsection}{\numberline {5.1}Untersuchung der Wirkung der Felder auf die Transfereffizienzen}{19}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {5.2}Bestimmung der Auswahlintervalle}{19}{subsection.4.5.2}%
+\contentsline {section}{\numberline {6}Konstruktion und Überprüfung interessanter Detektorkonfigurationen}{20}{section.4.6}%
+\contentsline {chapter}{\numberline {V}Optimierung der Energieauflösung eines Triple-GEM-Detektors}{21}{chapter.5}%
+\contentsline {section}{\numberline {1}Messmethodik}{21}{section.5.1}%
+\contentsline {section}{\numberline {2}Optimierungsmethodik}{21}{section.5.2}%
+\contentsline {section}{\numberline {3}Parameterscans für die einzelnen Felder}{21}{section.5.3}%
+\contentsline {section}{\numberline {4}Konstruktion und Überprüfung interessanter Detektorkonfigurationen}{21}{section.5.4}%
+\contentsline {chapter}{\numberline {VI}Bestimmung des Operations-Optimums}{22}{chapter.6}%
+\contentsline {section}{\numberline {1}Konstruktion von Feldkonfigurationen unter Berücksichtigung von Auflösung und Verstärkung}{22}{section.6.1}%
+\contentsline {section}{\numberline {2}Experimentelle Analyse der Konstruierten Konfigurationen}{22}{section.6.2}%
+\contentsline {chapter}{\numberline {VII}Zusammenfassung und Ausblick}{23}{chapter.7}%
+\contentsline {section}{\numberline {1}Zusammenfassung}{23}{section.7.1}%
+\contentsline {section}{\numberline {2}Ausblick: Optimierung auf Orts- und Zeitauflösung}{23}{section.7.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

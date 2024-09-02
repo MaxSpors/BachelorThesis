@@ -1,14 +1,14 @@
-\chapter{Das Prinzip von Gasdetektoren}
+\chapter{Funktionsweise von Gasdetektoren}
 
-\noindent Gasgefüllte Detektoren sind eine effiziente Methode zur Untersuchung ionisierender Strahlung und physikalischer Wechselwirkungen, die zu Teilchenzerfällen führen. Das Verständnis ihrer Funktionsweise und ihrer inhärenten Grenzen erfordert die Diskussion der ihnen zugrundeliegenden physikalischen Mechanismen. In diesem Kapitel wird daher die Funktionsweise von Gasdetektoren auf Basis dieser Prinzipien erläutert.
+\noindent Gasgefüllte Detektoren sind eine effiziente Methode zur Untersuchung ionisierender Strahlung und physikalischer Wechselwirkungen, die zu Teilchenzerfällen führen. Das Verständnis ihrer Funktionsweise und inhärenten Grenzen erfordert die Diskussion der ihnen zugrundeliegenden physikalischen Mechanismen. In diesem Kapitel wird daher die Funktionsweise von Gasdetektoren auf Basis dieser Prinzipien erläutert.
 
 	\section{Wechselwirkungen von ionisierender Strahlung mit Materie}
-	Ionisierende Strahlung kann mit dem durchstrahlten Medium wechselwirken und so Ionisationen verursachen. Die Wechselwirkungen unterscheiden sich für Photonen und geladenen Teilchen, masselose, neutrale Teilchen haben demnach andere Wechselwirkungsmechanismen als geladene Teilchen: Geladene Teilchen deponieren den Großteil ihrer Energie durch inelastische Stöße mit den Elektronen des Materials \cite{Leo}. Dieser Prozess hinterlässt eine Spur von Elektron-Ion-Paaren im Material, was prinzipiell eine Rekonstruktion der Teilchenspur ermöglicht, und so beispielsweise die Analyse von Zerfallsprozessen erlaubt.\\
+	Ionisierende Strahlung interagiert mit dem durchstrahlten Medium und kann dabei Ionisationen verursachen.  Die Wechselwirkungen unterscheiden sich für Photonen und geladenen Teilchen: Geladene Teilchen deponieren den Großteil ihrer Energie durch inelastische Stöße mit den Elektronen des Materials \cite{Leo}. Dieser Prozess hinterlässt eine Spur von Elektron-Ionen-Paaren im Material, was prinzipiell eine Rekonstruktion der Teilchenspur ermöglicht, und so beispielsweise die Analyse von Zerfallsprozessen erlaubt.\\
 	\\
-	Da die Spurrekonstruktion in dieser Arbeit keine zentrale Rolle spielt, werden im Folgenden die relevanten Wechselwirkungsphänomene fokussiert behandelt. Eine umfassende und detaillierte Behandlung der Teilchenwechselwirkungen findet sich exemplarisch in \cite{Leo} und \cite{Sauli_Multiwire}.
+	Da die Spurrekonstruktion in dieser Arbeit keine zentrale Rolle spielt, werden im Folgenden nur die relevanten, nämlich die photonischen Wechselwirkungsphänomene fokussiert behandelt. Eine umfassende und detaillierte Behandlung der Teilchenwechselwirkungen findet sich exemplarisch in \cite{Leo} und \cite{Sauli_Multiwire}.
 
 	\subsection{Photonen in Materie} \label{chap:Photonen}
-	Die Wechselwirkung von Photonen mit Materie belaufen sich im Wesentlichen auf den photoelektrische Effekt, Compton-Streuung und Paarbildung. Die Wahrscheinlichkeit dieser Prozesse hängt vom Material und der Photonenenergie $E_{\gamma}$ ab. Abbildung \ref{fig:WirkungsquerschnittePhotonen} veranschaulicht diesen Zusammenhang, indem sie die Übergangsbereiche darstellt, in denen die einzelnen Prozesse in Abhängigkeit von der Kernladungszahl und der Photonenenergie dominieren. Im Folgenden werden diese Prozesse kurz erläutert:
+	Die Wechselwirkung von Photonen mit Materie erfolgt im Wesentlichen durch den photoelektrischen Effekt, die Compton-Streuung und die Paarbildung.  Die Wahrscheinlichkeit dieser Prozesse hängt vom Material und der Photonenenergie $E_{\gamma}$ ab. Abbildung \ref{fig:WirkungsquerschnittePhotonen} veranschaulicht diesen Zusammenhang, indem sie die Bereiche darstellt, in denen die einzelnen Prozesse in Abhängigkeit von der Kernladungszahl und der Photonenenergie dominieren. Im Folgenden werden diese Prozesse kurz erläutert:
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.25]{PhotoQuerschnitte.png}
@@ -22,15 +22,21 @@
 			E_{e^{-}}= E_{\gamma}-\phi_{\text{A}}
 		\end{equation*} 
 		
-		\noindent Der Wirkungsquerschnitt ist sowohl kernladungszahl- als auch energieabhängig und tritt besonders stark bei Energien auf, die den Absorptionskanten der Atome entsprechen, insbesondere bei Atomen mit hoher Kernladungszahl  \cite{Leo}.
+		\noindent Der Wirkungsquerschnitt ist sowohl kernladungszahl- als auch energieabhängig, wobei der folgende Zusammenhang gilt:
+		\begin{equation*}
+			\sigma= \frac{32\sqrt{2}}{3} \pi r_{\text{e}}^{2} \alpha^{4} Z^{5} \qty(\frac{m_{e}c^{2}}{h \nu})^{7/2}
+		\end{equation*}
+		Hierbei bezeichnet $Z$ die Kernladung des Atoms, $r_{\text{e}}$ den klassischen Elektronenradius, $\alpha\approx 1/137$ die Feinstrukturkonstante, $m_{e}$ die Elektronenruhemasse, $c$ die Lichtgeschwindigkeit, $h$ das Planck'sche Wirkungsquantum und $\nu$ die Frequenz der einfallenden Strahlung. Der Wirkungsquerschnitt steigt stark an, wenn die Strahlungsenergie geringfügig über den Ionisationsenergien der K-, L- und M-Schalen liegt und muss in diesen Bereichen durch Vorfaktoren korrigiert werden \cite{Leo}.
+
 		
 		
 		\subsubsection{Compton-Streuung}
-		Compton-Streuung ist die Streuung eines Photons an einem lose gebundenen Elektron. Ein Teil der Photonenenergie wird dabei auf das Elektron übertragen, das Photon wird nicht absorbiert. Man unterscheidet zwischen Rayleigh-, Thomson- und Compton-Streuung. Diese Phänomene werden durch die Klein-Nishina-Formel beschrieben, wobei die klassische Streuung den niederenergetischen Grenzfall der Compton-Streuung darstellt. Der Wirkungsquerschnitt der Compton-Streuung ist primär energieabhängig  \cite{Leo}:
+		Compton-Streuung ist die Streuung eines Photons an einem lose gebundenen Elektron. Ein Teil der Photonenenergie wird dabei auf das Elektron übertragen, das Photon wird nicht absorbiert. Man unterscheidet zwischen Rayleigh-, Thomson- und Compton-Streuung. Diese Phänomene werden durch die Klein-Nishina-Formel beschrieben, wobei die klassische Streuung den niederenergetischen Grenzfall der Compton-Streuung darstellt. Der Wirkungsquerschnitt der Compton-Streuung ist primär energieabhängig mit $\kappa=h\nu /(m_{e}c^{2})$ gilt  \cite{Leo}:
 		\begin{equation*}
-			{\displaystyle \dv{\sigma}{\Omega}={\frac {1}{2}}{\frac {\alpha ^{2}}{m^{2}}}\left({\frac {E'}{E}}\right)^{2}\left({\frac {E'}{E}}+{\frac {E}{E'}}-\sin ^{2}\theta \right)}
+			\sigma= 2\pi r_{e}^{2} \qty(\frac{1+\kappa}{\kappa^{2}} \qty(\frac{2(1+\kappa)}{1+2\kappa}-\frac{\ln(1+2\kappa)}{\kappa})+\frac{\ln(1+2\kappa)}{2\kappa}-\frac{1+3\kappa}{(1+2\kappa^{2})})
 		\end{equation*}
-		wobei $\theta$ den Streuwinkel bezeichnet, $\alpha\approx 1/137$ die Feinstruktur-Konstante und $E^{\prime}$ die Energie des gestreuten Photons. Als ein Fall der elastischen Streuung existiert ein eindeutiger Zusammenhang zwischen der deponierten Energie und dem Streuwinkel.
+		
+		
 		
 		\subsubsection{Paarbildung}
 		Photonen deren Energie einen Wert von $1,22\ \si{MeV}$ überschreiten, können sich im Feld eines Kerns zu Elektronen-Positronen-Paaren umwandeln. Eine Umwandlung ohne einen dritten Wechselwirkungspartner ist aufgrund der Impulserhaltung nicht möglich. Paarbildung wird damit nur für hochenergetische Strahlung relevant. Der Wirkungsquerschnitt skaliert mit \cite{DemtroderKerne}:
@@ -42,28 +48,28 @@
 	\newpage
 	
 	\subsection{Sekundärionisation}	\label{chap:Sekundär}
-		Nach der Primärionisation durch das tatsächliche Detektionsereignis gibt es einige Effekte, die zu weiteren Ionisationen durch dasselbe Ereignis beitragen können. In diesem Zusammenhang spricht man von Sekundärionisationen. Ein Verständnis dieser Effekte ist fundamental für die korrekte Beurteilung der Arbeitsparameter von Detektoren (siehe Abschnitt \ref{sec: Parameter}).
+		Nach der Primärionisation durch das Detektionsereignis gibt es Effekte, die Sekundärionisationen herbeiführen. In diesem Abschnitt sollen diese Erscheinungen diskutiert werden. 
 		
 		\subsubsection{Lokale Clusterbildung}
-			Wird ein Elektron-Ionen-Paar durch Strahlung erzeugt, hat dieses Elektron oft noch so viel Energie, dass weitere Stoßwechselwirkungen mit den Atomen zu Sekundärionisationen führen können. Es bildet sich ein lokales Cluster aus Elektronen, die zu einem Detektionsereignis gehören, da der Ionisationsprozess so lange geht, bis die Energie des Elektrons für weitere Ionisationen nicht mehr ausreicht. Bei bekannter Ionisationsenergie des Mediums kann die Zahl der durch ein Detektionsereignis erzeugten Elektronen-Ionen-Paare kann wie folgt approximiert werden \cite{Sauli_Multiwire}:
+			Ein durch Strahlung erzeugtes freies Elektron hat oft noch so viel Energie, dass weitere Stoßwechselwirkungen mit den Atomen zu Sekundärionisationen führen. Es bildet sich ein lokales Cluster aus Elektronen, die zu einem Ereignis gehören, da der Ionisationsprozess so lange geht, bis die Energie des Elektrons für weitere Ionisationen nicht mehr ausreicht. Bei bekannter Ionisationsenergie des Mediums kann die Zahl der durch ein Detektionsereignis erzeugten Elektronen-Ionen-Paare kann wie folgt approximiert werden \cite{Sauli_Multiwire}:
 			\begin{equation} \label{eq:Primärionisation}
 				N_{\text{e}}=\frac{E_{\gamma}}{\phi_{\text{ion}}}
 			\end{equation}	
-			Der Wert, der aus dieser Formel folgt, ist offenbar ein Erwartungswert. Da die Wechselwirkungsprozesse statistischer Natur sind, fluktuiert die Zahl der erzeugten Elektronen-Ionen-Paare gemäß einer Polya-Verteilung \cite{ottnad}.
+			Hierbei handelt es sich um einen Erwartungswert, da die Zahl der erzeugten Paare aufgrund der statistischen Natur der Wechselwirkungen gemäß einer Polya-Verteilung fluktuiert. \cite{ottnad}.
 		
 		\subsubsection{Penning-Effekt}
-			Man kann nun ein anderes Molekül in das Medium geben, dessen Ionisationsenergie unterhalb der Anregungsniveaus des ursprünglichen Mediums liegt. Auf diese Weise kann man die Energie, die in Anregungen \enquote{verloren} geht wiederum durch Stoßwechselwirkungen zwischen den Atomen im Elektronen-Ionen-Paare umwandeln. In dieser Gasmischung wird die Effektive Ionisationsenergie quasi heruntergesetzt, sodass mehr Ionisationen stattfinden. Man bezeichnet dieses Gas als Quencher und den illustrierten Prozess als Penning Effekt \cite{ottnad}.
+			Durch die Beimischung eines Quencher-Gases mit niedrigerer Ionisationsenergie als die der Anregungsniveaus des Mediums kann die Energie, die in Anregungen verloren geht, durch Molekülstöße in weitere Ionisationen umgewandelt werden. Diese Gasmischung reduziert die mittlere Ionisationsenergie, man spricht bei diesem Prozess vom Penning Effekt \cite{ottnad}.
 			
 		\subsubsection{Auger-Meitner-Effekt}
-			Im Kontext des Photoeffektes ist es wahrscheinlich, dass das ausgelöste Elektron aus einer unteren Schale stammt. Neben der Rekombination unter Emission von Strahlung oder internen Übergängen unter Photonenemission ist auch ein strahlungsloser interner Übergang möglich. Dabei kann ein weniger stark gebundenes Elektron der äußeren Schalen auf die innere zurückfallen und seine Energie an ein anderes Elektron im System abgeben, was zu einer weiteren Ionisation führen kann \cite{Sauli_Multiwire}. 
+			Im Kontext des Photoeffektes ist es wahrscheinlich, dass das ausgelöste Elektron aus einer inneren Schale stammt. Neben der Rekombination unter Emission von Strahlung oder internen Übergängen unter Photonenemission ist auch ein strahlungsloser interner Übergang möglich. Dabei kann ein weniger stark gebundenes Elektron der äußeren Schalen auf die innere zurückfallen und seine Energie an ein anderes Elektron im System abgeben, was zu einer weiteren Ionisation führen kann \cite{Sauli_Multiwire}. 
 			
-		\subsubsection{$\delta$-Elektronen und nicht-lokale Clusterbildung}
+		\subsubsection{$\delta$-Elektronen}
 			Die statistische Natur der Wechselwirkungsprozesse erlauben es, dass ein ein hochenergetisches freies Elektron entstehen kann, das durch das Medium propagiert und in Übereinstimmung mit einer Modifizierten Bethe-Bloch-Formel \cite{Leo} Energie verliert. Hierbei können weitere Elektronen-Ionen-Paare erzeugt werden, die Position dieser Sekundärerzeugung muss allerdings nicht mit dem Ort der Primärionisation übereinstimmen, sondern kann deutlich entfernt stattfinden. Daher können mehrere Cluster entstehen, die zu einem Ereignis gehören. Delta-Elektronen können daher nicht nur die Ortsauflösung des Detektors beeinflussen, sondern auch für größere Fluktuationen bei der Messung der deponierten Energie sorgen.
 			
 		\newpage	
 		
 	\section{Bewegungen von Ladungen}		
-	Wenn Elektronen-Ionen-Paare erzeugt wird, müssen diese gemessen werden, um daraus Erkenntnisse über die Strahlung zu gewinnen. Dafür müssen die Ladungen von der Rekombination aufgehalten und getrennt werden, weswegen die Bewegung von Ladungsträgern und damit verbundene Größen definiert und verstanden werden müssen.\\
+	Wenn Elektronen-Ionen-Paare erzeugt werden, müssen diese gemessen werden, um daraus Erkenntnisse über die Strahlung zu gewinnen. Um einer Messung zugänglich zu sein, müssen die Paare getrennt, und der Ausleselektronik zugeführt werden, um erfasst zu werden. Da diese Prozesse auf der Bewegung von Ladungen (in Feldern) beruhen, werden diese im Hinblick auf die relevanten Eigenschaften hier kurz diskutiert.\\
 	Die Bewegung eines Ladungsträgers setzt sich zusammen aus der Eigenbewegung des Teilchens, die durch zahlreiche Stöße in thermische Bewegung (Diffusion) übergeht und die Driftbewegung in elektromagnetischen Feldern.
 	
 		\subsection{Diffusion}	
@@ -76,7 +82,7 @@
 		Insbesondere lässt sich die mittlere freie Weglänge als Maß für die Interaktionsrate für Ionisation und Rekombination verwenden \cite{Sauli_Multiwire}. Für Elektronen ist die thermische Geschwindigkeit und die Mittlere Freie Weglänge mehrere Größenordnungen größer als für Ionen, es ist daher deutlich angemessener die Elektronen für die Signalerzeugung am Detektor zu Verwenden.
 		
 		\subsection{Bewegung von Ladungsträgern in Feldern}\label{sec:Bewegung in Feldern}
-		Auf bewegte Ladungen in elektromagnetischen Feldern wirkt die Lorentzkraft und beschleunigt das Elektron entlang oder senkrecht zur Bewegungsrichtung. In der folgenden Detektorkonfiguration (siehe Abschnitt [GEM Design]) wird kein magnetisches Feld verwendet. Daher wird im Folgenden der Spezialfall mit Lorentzkraft für $\vec{B}=0$ betrachtet. Die Bewegung setzt sich zusammen aus den Stößen mit den Gasatomen und dem Drift im elektrischen Feld, das Problem wird damit beschrieben durch einen Spezialfall der Langevin-Gleichung \cite{Schwabl}:
+		Auf bewegte Ladungen in elektromagnetischen Feldern wirkt die Lorentzkraft und beschleunigt das Elektron relativ zur Bewegungsrichtung. In der folgenden Detektorkonfiguration (siehe Abschnitt [GEM Design]) wird kein magnetisches Feld verwendet. Daher wird im Folgenden der Spezialfall mit Lorentzkraft für $\vec{B}=0$ betrachtet. Die Bewegung setzt sich zusammen aus den Stößen mit den Gasatomen und dem Drift im elektrischen Feld, das Problem wird damit beschrieben durch einen Spezialfall der Langevin-Gleichung \cite{Schwabl}:
 		\begin{equation*}
 			m \dot{v}= q \vec{E}- f(t)
 		\end{equation*}
@@ -88,7 +94,7 @@
 		
 		\newpage
 	\section{Gasdetektorklassen}
-		Mit dem Wissen über die Erzeugung und das Verhalten von freien Ladungsträgern in Gasen ist es nun möglich die Grundzüge der Gas-Detektorklassen zu erörtern. Hierbei werden zunächst allgemeine Anmerkungen über die grundlegenden Konzepte gemacht, wobei im Besonderen auf den Anwendungsbereich und Limitationen geachtet wird, formale Überlegungen zum Aufbau werden indes nicht gemacht, da der Konzeptionelle Aufbau im Allgemeinen recht ähnlich ist, sofern es keine besonderen Detektorkonzepte benötigt. Die Hauptunterscheidung der Klassen liegt in der Betriebsspannung \cite{Leo}.
+		Das Wissen über das Verhalten von Ladungsträgern in Gasen und Feldern erlaubt nun eine erste Erörterung der grundlegenden Gasdetektortypen, ihrer Anwendungsbereiche und Limitationen, bevor diese dann in einer speziellen Detektorgeometrie- dem Gas Electron Multiplier zusammenwirken, um einen Detektor zu realisieren, der die Rekonstruktion einer Teilchenspur ermöglicht.   \cite{Leo}.
 		
 		\subsection{Ladungsmultiplikationsmechanismen} \label{sec:Ladungsmultiplikation}
 			Wenn die kinetische Energie eines Teilchens die Ionisationsenergie eines Atoms überschreitet, können Ionisaationen auftreten. Ausgehend davon, dass die kinetische Energie geladener Teilchen in Feldern wesentlich von den anliegenden Feldern abhängt (siehe Abschnitt \ref{sec:Bewegung in Feldern}), kann das Feld so eingestellt werden, dass Sekundärionisationen stattfinden. Je nach Feldstärke und Größe der Multiplikationsregion können dann auch in derselben Region ausgelöste Elektronen bereits zur Verstärkung der Elektronenwolke beitragen, es entsteht eine Elektronenlawine \cite{Townsend}, \cite{Leo}.\\
@@ -106,24 +112,25 @@
 			
 			\newpage
 		\subsection{Ionisations- und Proportionalkammern} \label{sec:IonisationsundProportionalkammern}
-			Grundsätzlich unterscheidet man für Gasdetektoren, die nicht nur zum Nachweis, sondern auch zur Vermessung der Strahlung genutzt werden können, Ionisations- und Proportionalkammern.\\
-			 Ionisationskammern werden von elektrischen Feldern durchzogen, die nicht stark genug sind, um systematisch Ladungsmultiplikation auszulösen und dennoch (fast) alle entstehenden Elektronen-Ionen-Paare trennen und zur Ausleseelektronik zu überführen. Wird die Auslese segmentiert, ist es prinzipiell möglich die Spur des Teilchens zu rekonstruieren, in der Praxis sind die Signale allerdings zu schwach um adäquat vermessen zu werden. Es braucht eine zusätzliche Verstärkung, bevor die Elektronen die Auslese erreichen. Ausgehend davon, dass die Funktionsweise der Spurrekonstruktion für diese Arbeit nur peripher relevant ist, wird auf eine extensive Diskussion verzichtet, stattdessen reicht ein Verweis auf die dafür vorgesehene Fachliteratur \textcolor{red}{Zitation: Funktionsweise TPC}\\
-			\\
-			 Um die Unzulänglichkeiten der Ionisationskammer zu kompensieren, kann man das Elektrische Feld so wählen, dass eine Ladungsmultiplikation einsetzt, eine Minimalsbschätzung kann hierbei durch die Townsend-Koeffizienten geschehen, nach Abbildung \textcolor{blue}{Abbildung: Townsend-Koeffizienten} beginnt das Multiplikationsregime bei [ZAHLENWERT].\\
+			 Gasdetektoren, die nicht nur zum Nachweis, sondern auch zur Untersuchung der Strahlung genutzt werden, unterscheidet man in Ionisations- und Proportionalkammern, während beide Kammern von Elektrischen Feldern durchzogen sind, macht die Stärke des Feldes, wie in Abschnitt \ref{sec:Ladungsmultiplikation} diskutiert den entscheidenden Unterschied:\\
 			 \\
-			  Bei alleiniger Nutzung einer Proportionalkammer ist die Verstärkung im Allgemeinen auch Funktion des Entstehungsortes des Elektronen-Ionen-Paares. Um diese Limitation zu überwinden, können die Ionisationszone und die Verstärkungszone durch eine vorgelagerte Ionisationskammer getrennt werden, wodurch die Abhängigkeit vom Entstehungsort wegfällt, da alle Elektronen an der gleichen Stelle an die Verstärkungsregion übergeben werden.\\
+			 Die Felder in Ionisationskammern sind zu schwach, um systematisch Ladungsmultiplikation zu induzieren; die Elektronen-Ionen-Paare werden lediglich gesammelt. Wird die Auslese segmentiert, ist es prinzipiell möglich die Spur des Teilchens zu rekonstruieren, praktisch sind die Signale meist zu schwach um vermessen zu werden. Es braucht eine zusätzliche Verstärkung, bevor die Elektronen die Auslese erreichen.\\
+			\\
+			 Um die Unzulänglichkeiten der Ionisationskammer zu kompensieren, kann man das Elektrische Feld so wählen, dass eine Ladungsmultiplikation einsetzt, eine Minimalsbschätzung kann hierbei durch die Townsend-Koeffizienten geschehen, nach Abbildung \textcolor{blue}{Abbildung: Townsend-Koeffizienten} beginnt das Multiplikationsregime bei [ZAHLENWERT]. Durch die Ladungsmultiplikation können dann messbare Signale an den Segmenten der Ausleseelektronik induziert werden, was bei bekanntlicher zeitlicher Abfolge die Konstruktion einer Spur ermöglicht. Die konzeptionelle Funktionsweise einer Spurkammer ist für diese Arbeit bestenfalls tangential relevant, für die Ausführungen wird daher auf \textcolor{red}{Zitation: TPC} verweisen.\\
+			 \\
+			  Bei alleiniger Nutzung einer Proportionalkammer ist die Verstärkung im Allgemeinen abhängig vom Entstehungsortes des Elektronen-Ionen-Paares. Um diese Limitation zu überwinden, können die Ionisationszone und die Verstärkungszone durch eine vorgelagerte Ionisationskammer getrennt werden, wodurch die Abhängigkeit vom Entstehungsort wegfällt, da alle Elektronen an der gleichen Stelle an die Verstärkungsregion übergeben werden.\\
 			  \\
-			  Eine weitere Limitation tritt genau dann zu Tage, wenn die Felder zu groß gewählt werden. In diesem Fall ist die Verstärkung so stark, dass eine wohllokalisierte Ladungszone aus Ionen entsteht, die das elektrische Feld verzerrt und so weitere Multiplikation temporär unterbinden kann, da sie deutlich langsamer als Elektronen driften. In diesem Fall encoded das Ausgangssignal keine genaue Information zu der im Detektor deponierten Energie, die Proportionalität des Detektors geht verloren, sodass es eine natürliche Gain-Limitation gibt, mit der der Betrieb als Proportionalkammer möglich ist.
+			  Eine weitere Limitation trittdann zu Tage, wenn die Felder zu groß gewählt werden. In diesem Fall ist die Verstärkung so stark, dass eine lokalisierte Ladungszone aus Ionen entsteht, die das elektrische Feld verzerrt und so weitere Multiplikation temporär unterbinden kann. In diesem Fall geht im Ausgangssignal die Information zur deponierten Energie verloren. Ex existiert demnach eine natürliche Verstärkungslimitation.
 			 
 			 \newpage
 		\subsection{Parameter von Gasdetektoren} \label{sec: Parameter}
 			Zum Abschluss des Grundlagenkapitels für Gasdetektoren sollen nun einige finale Überlegungen zu generellen Eigenschaften und Parametern von Gasdetektoren angestellt werden. Im folgenden werden demnach die Ionisationseigenschaften des Aktiven Mediums, sowie die Energieauflösung von Gasdetektoren diskutiert,
 			
 			\subsubsection{Wahl des Gases}
-				Die Townsend-Koeffizienten sind aufgrund der unterschiedlichen Ionisationsnergien der verschiedenen Elemente materialspezifisch \textcolor{blue}{Abbildung: Townsend-Koeffizienten}. Die Ladungsverstärkung ist demnach abhängig von der Wahl des Aktiven Mediums und ist ihrerseits Thema kontinuierlicher Untersuchung \cite{GAS_MIX}. 
+				 Die Ladungsverstärkung ist aufgrund unterschiedlicher Ionisarionsenergien abhängig von der Wahl des Aktiven Mediums und ist ihrerseits Thema kontinuierlicher Untersuchung \cite{GAS_MIX}. 
 				Diese Untersuchungen erlauben nun eine informierte Wahl des Aktiven Mediums, indem man einige Auswahlkriterien definiert und die Mixtur auswählt, die diese Kriterien erfüllt:\\
 				\\
-				Ausgehend davon, dass das aktive Medium immer einer externen Energie ausgesetzt ist, sind chemische Reaktionen mit der Detektorbegrenzung oder dem Quencher-Gas im Allgemeinen nicht auszuschließen. Entsprechend können sich durch Reaktionen Alterungserscheinungen ausbilden, die den Detektorbetrieb beeintächtigen \cite{Ageing}. Daher ist ein möglichst reaktionsträges Element als Basis des aktiven Mediums zu verwenden. Edelgase sind in dieser Hinsicht bestens geeignet.\\
+			Da das Medium mit ionisierender Strahlung wechselwirkt, sind chemische Reaktionen mit dem Detektor oder dem Quencher-Gas im Allgemeinen nicht auszuschließen. Entsprechend können sich durch Reaktionen Alterungserscheinungen ausbilden, die den Detektorbetrieb beeinträchtigen \cite{Ageing}. Daher ist ein möglichst reaktionsträges Element als Basis des aktiven Mediums zu verwenden. Edelgase sind in dieser Hinsicht bestens geeignet.\\
 				Unter den Edelgasen gibt es neben Kriterien wie Verfügbarkeit und damit verbunden den Kosten noch andere physikalische Einschränkungen, die die Kandidaten für die Basis des aktiven Mediums begrenzen. Neben einer hinreichend kleinen Ionisationsenergie sind daher Diffusionskoeffizienten und Molekülmobilität weitere Einschränkungen an das Gas. \\
 				Um eine möglichst große Elektronenausbeute zu garantieren, wird im folgenden Argon verwendet, das Argon vergleichsweise niedrige Ionisationsenergien hat (siehe Tabelle \ref{tab:Ionisationsenergien}), wobei CO$_{2}$ als Quench-Gas beigemischt wird. Das Mischungsverhältnis der Gase wird im Folgenden $90\%-10\%$ sein, dies erlaubt eine adäquate Ausnutzung der in \ref{chap:Sekundär} erwähnten Effekte.
 				
@@ -142,7 +149,7 @@
 				
 				\newpage
 			\subsubsection{Energieauflösung eines Detektors}
-				Wird monochromatische Strahlung in einen Detektor gestrahlt, sollte dieser ein Signal erzeugen. welches zu der Energie des monochromatischen Strahlung passt. Das Messergebnis ist allerdings keinesfalls eine diskrete Linie, sondern hat ein Semi-Gaußprofil. Für einen Gasdetektor (ohne Ausleseelektronik) gibt es einige Mechanismen, die zu dieser Form beitragen. Die wichtigsten sollen hier kurz umrissen werden:
+				Wird monochromatische Strahlung in einen Detektor gestrahlt, sollte dieser ein Signal erzeugen. welches zu der Energie des monochromatischen Strahlung passt. Das Messergebnis ist allerdings keinesfalls eine diskrete Linie, sondern ein Gaußprofil. Für einen Gasdetektor (ohne Ausleseelektronik) gibt es einige Mechanismen, die zu dieser Form beitragen. Die wichtigsten sollen hier kurz umrissen werden:
 				\begin{enumerate}
 					\item \textbf{Primär-Ionisationsfluktuationen}: Die Zahl der durch ein Photon der Energie $E_{\gamma}$ erzeugten Elektronen-Ionen-Paare kann mit Gleichung \ref{eq:Primärionisation} abgeschätzt werden. Aus der statistischen Natur der Prozesse folgen allerdings Fluktuationen um den Mittelwert. Um diese adäquat abzuschätzen, muss beachtet werden, dass die Ionisationsprozesse in diesem Fall nicht gänzlich unabhängig sind, sodass die Abschätzung der rein statistischen Fluktuationen (Poisson) um den Fano-Faktor $F$ korrigiert werden muss \cite{ottnad},\cite{Leo}. Insgesamt ergibt sich dann eine Energieauflösung der folgenden Form: 
 					\begin{equation*}
@@ -166,12 +173,14 @@
 			
 
 \chapter{Gas Electron Multiplier}
-Ordinäre Proportionalkammern sind natürlichen Problemen und Limitationen unterworfen, die in Abschnitt \ref{sec:IonisationsundProportionalkammern} allgemein diskutiert wurden. Für präzisere Untersuchungen sind jedoch elaboriertere Detektorkonzepte erforderlich, die beispielsweise Orts- und Spurrekonstruktion ermöglichen, um so Zerfallsprozesse zu berücksichtigen. Eine frühe Möglichkeit dies zu realisieren waren Vieldraht-Proportionalkammern (MWPC), bei denen die Rekonstruktion durch die Verwendung und Auslese von vielen Proportionalzählern ermöglicht wurde. Eine extensive Erklärung der Funktionsweise findet sich in \cite{Sauli_Multiwire}.\\
-Um eine präzisere Rekonstruktion zu gewährleisten, ist es sinnvoll, die Auslesestruktur weiter zu segmentieren. Präzisere Ergebnisse sind insbesondere dann möglich, wenn auch die Verstärkerstufen mikrostrukturiert sind. In diesem Kontext treten die Gas Electron Multiplier (GEMs) auf, die dies ermöglichen. Im folgenden Kapitel soll das Konzept dieser Detektorgeometrie diskutiert werden, um auf diese Weise die weitreichenden Vorteile dieser Anordnung zu erläutern.
+ Untersuchungen zum Verständnis von Zerfallsprozessen instabiler Teilchen erfordern elaboriertere Detektorkonzepte als Ionisations- und Driftkammern. Eines dieser Konzepte waren die Vieldraht-Proportionalkammern (MWPC), bei denen die Verwendung vieler Proportionalzähler die Spurrekonstruktion erlaubt. Ihre Funktionsweise ist in \cite{Sauli_Multiwire} erklärt.\\
+ Präzisere Rekonstruktionen sind möglich, wenn Auslese und Verstärkerstufe mikrostrukturiert sind. In diesem Kontext treten die Gas Electron Multiplier (GEMs) auf. Im folgenden Kapitel soll das Konzept dieser Detektorgeometrie diskutiert werden, um so die Vorteile dieser Anordnung zu erläutern.
 
 \section{Aufbau und Funktionsweise einer GEM-Verstärkungsstufe} 
-  GEMs sind zunächst einmal mikrostruktuierte Versionen von Proportionalkammern. Wegen ihrer Bauweise können sie hintereinander geschaltet werden, sodass wir im folgenden von Verstärkerstufen sprechen. GEM-Verstärkerstufen sind dünne Polyamidfolien, die beidseitig mit Kupfer beschichtet sind. Die Strukturierung der Stufe erfolgt dadurch, dass Löcher in die Folien geätzt werden, sodass sich eine hexagonale Struktur ausbildet (siehe Abbildung \ref{fig:Draufsicht}). Der Abstand zweier paarweise benachbarter Löcher, im Folgenden Pitch, ist daher stets gleich.\\
-   Die Eigenschaften der Foliengeometrie, insbesondere Pitch und Lochradien, wurden in der Vergangenheit umfassend untersucht \cite{Sauli_Übersicht}. Basierend auf diesen Untersuchungen haben sich spezifische Konfigurationen etabliert, und entsprechend dieser Konvention werden GEM-Folien im Standardformat verwendet, die Parameter der Folie sind als Querschnitt der Folie in Abbildung \ref{fig:Querschnitt} zu sehen.
+  GEMs sind mikrostruktuierte Proportionalkammern, die aus einer dünnen Polyamidfolie bestehen, die beidseitig mit Kupfer beschichtet ist. In die Folien werden Löcher reingeätzt, sodass sich eine hexagonale Struktur wie in Abbildung  \ref{fig:Draufsicht} ausbildet. Der Abstand zweier benachbarter Löcher, im Folgenden Pitch, ist stets gleich, wobei der Einfluss des Pitches sowie der Lochradien in der Vergangenheit umfassend untersucht wurden \cite{Sauli_Übersicht}. \\
+  Basierend auf diesen Untersuchungen haben sich spezifische Konfigurationen etabliert, und entsprechend dieser Konvention werden GEM-Folien im Standardformat verwendet, die Parameter der Folie sind als Querschnitt der Folie in Abbildung \ref{fig:Querschnitt} zu sehen.\\
+  \\
+  Die elementare Funktionsweise einer GEM basiert dabei darauf, dass eine moderate Spannung von bspw. 100 $\si{V}$ zwischen den Kupferschichten ausreicht, um in den Löchern ein Feld der Größenordnung von $20.000\ \si{V/cm}$ zu induzieren, und so Ladungsmultiplikation zu ermöglichen. Werden nun Ionisationskammern an  die Ober- und Unterseite der GEM Folie angefügt, können Elektronen-Ionen-Paare, die in der Ionisationszone entstehen an die GEM-Folie übergeben und vervielfacht werden, um dann wieder an eine Ionisationskammer weitergegeben zu werden, die diese dann an die Ausleseelektronik verbringt.
 
 	\begin{figure}[h]
 		\centering
@@ -188,10 +197,10 @@ Um eine präzisere Rekonstruktion zu gewährleisten, ist es sinnvoll, die Ausles
 	\end{figure}
 		
 		
-		
-\noindent Die wesentliche Stärke dieses Ansatzes liegt darin, dass eine vergleichsweise kleine Spannung zwischen den Kupferplatten zu großen Feldern in den Löchern führt. So führt bspw. eine Potentialdifferenz von $100\ \si{V} $ zu einem Feld der Größenordnung von $20.000\ \si{V/cm}$. Ein Vergleich mit dem Townsend-Koeffizienten (siehe Abbildung \textcolor{blue}{Townsend-Koeffizient}) zeigt, dass in diesem Bereich eine starke Ladungsmultiplikation auftritt. Durch die starke räumliche Begrenzung der einzelnen Verstärkungvolumina wird der störende Einfluss der Ionen reduziert, da die Distanzen, die die Ionen zurücklegen müssen, um an einer Elektrode mit einem Elektron zu rekombinieren vergleichsweise gering ist. Auf diese Weise verläuft die Multiplikation homogen. Um das Einzusehen, sind die Äquipotentialflächen eines GEM-Feldes in Abbildung \textcolor{blue}{GEM-Feld} dargestellt. Diese Konstruktion erlaubt es demnach bei potentiell höheren Verstärkungen zu operieren, ohne dass Informationen über die im Detektor deponierte Energie verloren gehen. \\
+\noindent Der Vorteil dieser Geometrie ist hierbei ersichtlich. Mit moderatem Spannungen sind hohe Verstärkungen erreichtbar, sodass ein effizienter Betrieb der GEM möglich ist. Sollten die Felder dennoch zu hoch gewählt werden, kann der Multiplikationsprozess außer Kontrolle geraten und zu einer Gasentladung in der Verstärkerfolie führen. Da die Ausleseelektronik aber nunmehr von der Verstärkerstufe elektronisch getrennt ist, sinkt die Wahrscheinlichkeit, dass die Entladung bis zur Auslese propagiert und diese beschädigt. Der Schaden begrenzt sich ggf. auf die Folie.\\
+Ferner sind die einzelnen Verstärkungsvolumina nun von den GEM-Elektroden begrenzt, die Feldlinien (Abbildung) verlaufen zwischen der Ober- und Unterseite. Da die Ionen den Feldlinien folgen, ist die Strecke, die sie im Vergleich zu ordinären Proportionalkammern zurücklegen müssen, um zu rekombinieren deutlich kleiner, sodass Verzerrungen durch Ladungswolken deutlich später auftreten. Dies ermöglicht prinzipiell höhere Verstärkungen und höhere Ereignisraten. 		
 \\
-Da es sich bei den einzelnen GEM-Löchern im Wesentlichen um Proportionalkammern handelt, gelten die in Abschnitt \ref{sec:IonisationsundProportionalkammern} diskutierten Grenzen für jedes der Löcher individuell. Es ist allerdings so, dass die Verstärkung in den Folien, also entsprechend elektronisch getrennt von der Ausleseelektronik insofern vorteilhaft ist, dass Gasentladungen die Ausleseelektronik im Allgemeinen nicht erreichen und sie so nicht zerstören können. Es ist allerdings möglich. dass Gasentladungen in den Löchern der Folie auftritt und auf diese Weise die Folie schädigt. Es ist also geboten die Folie bei moderater Verstärkung. in Einklang mit den diskutierten Limits zu verwenden.
+Da es sich bei den einzelnen GEM-Löchern im Wesentlichen um Proportionalkammern handelt, gelten die in Abschnitt \ref{sec:IonisationsundProportionalkammern} diskutierten Grenzen für jedes der Löcher individuell.
 			
 
 

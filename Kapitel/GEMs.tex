@@ -4,7 +4,16 @@
 		\subsection{Detektorkonfiguration}
 	Die systematische Erfassung von Verstärkung und Energieauflösung erfordert eine Detektoranordnung, die die flexible Variation der Felder ermöglicht und vergleichsweise einfach zu unterhalten ist. Zu diesem Zwecke wird die Konfiguration aus Abbildung \ref{fig:Konzeptskizze GEM Aufbau} in einem eigens für solche Zwecke konzipierten Detektor gebaut \cite{DetektorPrototyp}. \\
 	\\
-	 Hierzu werden die GEM-Folien auf Rahmen gespannt, die es ermöglichen die Folien in eine dafür vorgesehene Halterung einzusetzen ( siehe Abbildung (\textcolor{blue}{Hier CAD-Zeichnung des Detektors einfügen, weil Software unbekannt nehme ich vielleicht die aus Ottnad,2020?})), der Abstand der einzelnen Folien und Platten kann variabel über Abstandsbolzen eingestellt werden. Die Rahmenanordung wird dann in dem Aluminiumgehäuse fixiert. Das Alumniniumgehäuse bietet dabei Anschlüsse für die Hochspannungskabel zum Betrieb des Detektors, sowie Anschlüsse zur Auslese der Messereignisse und Anschlüsse für Gaszu- und Abfluss. Die Strahlung kann durch dafür vorgesehene Fenster eingestrahlt werden, die auf dem Aluminumverdeck und an der Seite sind. Für den Fall der Einstrahlung von oben wurde die Driftfeldanode in zwei Anoden aufgeteilt, da so Elektronen-Ionen-Paare, die über der Driftkammer entstehen von der oberen Platte abgefangen werden können und so keine Schwankungen im Driftfeld zulässt. Auf diese Weise wird der Detektor sicherer gegen Störeinflüsse geschützt.
+	 Hierzu werden die GEM-Folien auf Rahmen gespannt, die es ermöglichen die Folien in eine dafür vorgesehene Halterung einzusetzen (siehe Abbildung \ref{fig:CAD-Zeichnung}), der Abstand der einzelnen Folien und Platten kann variabel über Abstandsbolzen eingestellt werden. Die Rahmenanordung wird dann in dem Aluminiumgehäuse fixiert. Das Alumniniumgehäuse bietet dabei Anschlüsse für die Hochspannungskabel zum Betrieb des Detektors, sowie Anschlüsse zur Auslese der Messereignisse und Anschlüsse für Gaszu- und Abfluss. Die Strahlung kann durch dafür vorgesehene Fenster eingestrahlt werden, die auf dem Aluminumverdeck und an der Seite sind. Für den Fall der Einstrahlung von oben wurde die Driftfeldanode in zwei Anoden aufgeteilt, da so Elektronen-Ionen-Paare, die über der Driftkammer entstehen von der oberen Platte abgefangen werden können und so keine Schwankungen im Driftfeld zulässt. Auf diese Weise wird der Detektor sicherer gegen Störeinflüsse geschützt.
+	 \begin{figure}[h]
+	 	\centering
+	 	\includegraphics[scale=0.45]{CAD-Zeichnung.png}
+	 	\caption{CAD-Zeichnung des Detektors bestehend aus den einzelnen Anschlüssen und der Rahmenstruktur zum Befestigen der einzelnen GEM-Folien, entnommen aus \cite{ottnad}}
+	 	\label{fig:CAD-Zeichnung}
+	 \end{figure}
+
+\newpage
+
 
 		\subsection{Auslese- und Betriebselektronik}
 		In diesem Absatz sollen die Grundlagen der verwendeten Elektronik beschrieben und begründet werden. In Abbildung \textcolor{blue}{Blockschaltbild von Betriebs und Ausleseelektronik}. ist das Konzeptionelle Blockschaltbild zu sehen, mit dem die Messungen stattfinden. Die GEM-Folien werden über einen Hochspannungsgenerator des Modells betrieben, wobei ein Pikoamperemeter des Typs \textcolor{red}{Zagreb-Pikoampermeter-Ident} davorgeschaltet wird. Dies ermöglicht die Detektion von Gasentladungen, durch die kurzweilige aber vergleichsweise große Ströme entstehen können, wobei dann Schritte ergriffen werden können, um die Detektoranordnung vor großflächigeren Schäden zu schützen. Die Spannungen sind über eine zentralisierte Slow-Control steuerbar und können anwendungsbedingt auf eine Genauigkeit von einem Volt \textcolor{red}{Verifikation} eingestellt werden. \textcolor{red}{gehe auf die Süezifikationen der Schaltung ein, siehe Ottnad Arbeit} \\
@@ -163,4 +172,4 @@
 \chapter{Zusammenfassung und Ausblick}
 	\section{Zusammenfassung}
 	
-	\section{Ausblick: Optimierung auf Orts- und Zeitauflösung}		
+	\section{Ausblick: Optimierung auf Orts- und Zeitauflösung}
